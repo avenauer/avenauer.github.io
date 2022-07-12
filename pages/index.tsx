@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../src/containers/header/header";
 import Intro from "../src/containers/sections/intro";
+import Projects from "../src/components/projects/projects";
+import Paragraph from "../src/components/common/Paragraph";
 
 const Home: NextPage = () => {
   return (
@@ -20,14 +22,9 @@ const Home: NextPage = () => {
       <div className="bg-zinc-100 duration-200 ease-smooth dark:bg-zinc-900">
         <Header />
         <Intro />
-        {/*<Headline text="Headline" size="lg" />
-          <Headline text="Headline" size="xl" />
-          <Paragraph text="Paragraph" size="xl" />
-          <Paragraph text="Paragraph" size="lg" />
-          <Paragraph text="Paragraph" size="md" />
-          <Paragraph text="Paragraph" size="sm" />
-          <Paragraph text="Paragraph" size="xs" />*/}
+        <Projects />
       </div>
+      <div id="section_1"></div>
     </>
   );
 };

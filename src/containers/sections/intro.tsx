@@ -19,7 +19,7 @@ const Intro = () => {
             className="mx-auto mt-4 block max-w-md opacity-70"
           />
           <div className="mt-5 flex justify-center">
-            <CustomLink to="/" text="View recent projects" />
+            <CustomLink to="#section_1" text="View recent projects" />
             <Paragraph size="xs" text="or" className=" mx-6 opacity-60" />
             <CustomLink to="/" text="Feel free to say hello" />
           </div>

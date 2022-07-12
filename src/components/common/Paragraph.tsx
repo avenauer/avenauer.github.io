@@ -3,7 +3,7 @@ import fontStyle from "../../../styles/typography.module.scss";
 
 interface ParagraphSize {
   size?: "xs" | "sm" | "md" | "lg" | "xl";
-  text: string;
+  text: any;
   className?: string;
 }
 
