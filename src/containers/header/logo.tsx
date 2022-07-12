@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="w-12 fill-amber-500">
+    <div className="w-10 dark:fill-white fill-zinc-900 ease-smooth duration-200">
       <svg viewBox="0 0 130 150" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M65.0004 18.7L89.3004 32.8V51.6L105.5 42.2V23.4L65.0004 0L24.4004 23.4V126.6L65.0004 150L105.6 126.6V89.1L40.6004 51.6V32.8L65.0004 18.7ZM89.3004 98.4V117.2L65.0004 131.3L40.6004 117.2V70.3L89.3004 98.4Z"

@@ -4,7 +4,7 @@ import Header from "../src/containers/header/header";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Marcin Bieszka - portfolio</title>
         {/*TODO: Meta description*/}
@@ -21,8 +21,10 @@ const Home: NextPage = () => {
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <Header />
-    </div>
+      <div className="ease-smooth duration-200 bg-zinc-100 dark:bg-zinc-900">
+        <Header />
+      </div>
+    </>
   );
 };
 
