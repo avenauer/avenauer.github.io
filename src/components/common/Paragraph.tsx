@@ -9,7 +9,7 @@ interface ParagraphSize {
 
 export const Paragraph: FC<ParagraphSize> = ({
   text,
-  size = "md",
+  size = "sm",
   className,
 }) => {
   return (
