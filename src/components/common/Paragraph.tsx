@@ -7,14 +7,8 @@ interface ParagraphSize {
   className?: string;
 }
 
-export const Paragraph: FC<ParagraphSize> = ({
-  text,
-  size = "sm",
-  className,
-}) => {
-  return (
-    <span className={`${fontStyle[`body_${size}`]} ${className}`}>{text}</span>
-  );
+export const Paragraph: FC<ParagraphSize> = ({ text, size = "sm", className }) => {
+  return <span className={`${fontStyle[`body_${size}`]} ${className}`}>{text}</span>;
 };
 
 export default Paragraph;

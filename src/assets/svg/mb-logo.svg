@@ -21,12 +21,12 @@
                 y2="74.9985"
                 gradientUnits="userSpaceOnUse"
         >
-            <stop stop-color="#0CD0EC" />
-            <stop offset="0.5" stop-color="#B97BDC" />
-            <stop offset="1" stop-color="#EE52D5" />
+            <stop stop-color="#0CD0EC"/>
+            <stop offset="0.5" stop-color="#B97BDC"/>
+            <stop offset="1" stop-color="#EE52D5"/>
         </linearGradient>
         <clipPath id="clip0_60_37">
-            <rect width="129.9" height="150" fill="white" />
+            <rect width="129.9" height="150" fill="white"/>
         </clipPath>
     </defs>
 </svg>

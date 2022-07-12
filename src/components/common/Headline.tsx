@@ -7,16 +7,8 @@ interface HeadlineSize {
   className?: string;
 }
 
-export const Headline: FC<HeadlineSize> = ({
-  text,
-  size = "lg",
-  className,
-}) => {
-  return (
-    <span className={`${fontStyle[`headline_${size}`]} ${className}`}>
-      {text}
-    </span>
-  );
+export const Headline: FC<HeadlineSize> = ({ text, size = "lg", className }) => {
+  return <span className={`${fontStyle[`headline_${size}`]} ${className}`}>{text}</span>;
 };
 
 export default Headline;

@@ -5,11 +5,11 @@ export default function ToggleTheme() {
   const { theme, setTheme } = useTheme();
   return (
     <div
-      className="cursor-pointer relative h-5 w-8 rounded-full border-2 border-zinc-900 dark:border-zinc-100 ease-smooth duration-200"
+      className="relative h-5 w-8 cursor-pointer rounded-full border-2 border-zinc-900 duration-200 ease-smooth dark:border-zinc-100"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <div
-        className={`w-3 h-3 mt-0.5 ease-smooth duration-150 rounded-full bg-zinc-900 dark:bg-zinc-100 ${
+        className={`mt-0.5 h-3 w-3 rounded-full bg-zinc-900 duration-150 ease-smooth dark:bg-zinc-100 ${
           theme != "dark" ? "translate-x-0.5" : "translate-x-3.5"
         }`}
       />
