@@ -3,7 +3,7 @@ import Logo from "./logo";
 
 const Header = () => {
   return (
-    <header>
+    <header className="w-full border">
       <Logo />
     </header>
   );

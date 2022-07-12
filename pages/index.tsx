@@ -22,8 +22,6 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header />
-        asdasda
-      <footer></footer>
     </div>
   );
 };
