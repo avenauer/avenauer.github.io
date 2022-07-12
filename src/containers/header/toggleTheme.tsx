@@ -9,9 +9,9 @@ export default function ToggleTheme() {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <div
-        className={`${
-          theme != "dark" ? "ml-3.5" : "ml-0.5"
-        } w-3 h-3 mt-0.5 ease-smooth duration-150 rounded-full bg-zinc-900 dark:bg-zinc-100 `}
+        className={`w-3 h-3 mt-0.5 ease-smooth duration-150 rounded-full bg-zinc-900 dark:bg-zinc-100 ${
+          theme != "dark" ? "translate-x-0.5" : "translate-x-3.5"
+        }`}
       />
     </div>
   );
