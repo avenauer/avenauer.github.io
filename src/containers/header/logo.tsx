@@ -1,11 +1,15 @@
 import React from "react";
-import Image from "next/dist/client/future/image";
-import LogoImage from "../../assets/mb-logo.svg";
+import Image from "next/image";
+import LogoImage from "../../assets/svg/mb-logo.svg";
 
 const Logo = () => {
   return (
-    <div className="w-44 fill-zinc-900 dark:fill-zinc-200">
-      <Image src={LogoImage} height={1} width={1} alt="" />
+    <div className="w-10 h-10 bg-red-500">
+      <Image
+        objectFit={"contain"}
+        src={LogoImage}
+        alt=""
+      />
     </div>
   );
 };
