@@ -2,12 +2,19 @@ import { FC } from "react";
 import fontStyle from "../../../styles/typography.module.scss";
 
 interface ParagraphSize {
-  size?: 1 | 2 | 3 | 4 | 5;
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   text: string;
+  className?: string;
 }
 
-export const Paragraph: FC<ParagraphSize> = ({ text, size = 1 }) => {
-  return <span className={`${fontStyle[`test_${size}`]}`}>{text}</span>;
+export const Paragraph: FC<ParagraphSize> = ({
+  text,
+  size = "md",
+  className,
+}) => {
+  return (
+    <span className={`${fontStyle[`body_${size}`]} ${className}`}>{text}</span>
+  );
 };
 
 export default Paragraph;

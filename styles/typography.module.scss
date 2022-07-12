@@ -1,19 +1,27 @@
-.test_1 {
-  @apply text-red-400 font-medium text-xl border-2;
+.headline_lg {
+  @apply block text-3xl font-light leading-tight tracking-wider;
 }
 
-.test_2 {
-  @apply text-green-500 font-medium text-xl border-2;
+.headline_xl {
+  @apply block text-2xl font-bold leading-tight;
 }
 
-.test_3 {
-  @apply text-green-500 font-medium text-xl border-2;
+.body_xl {
+  @apply text-xl font-medium leading-tight tracking-tight;
 }
 
-.test_4 {
-  @apply text-green-500 font-medium text-xl border-2;
+.body_lg {
+  @apply text-lg font-medium tracking-tight;
 }
 
-.test_5 {
-  @apply text-green-500 font-medium text-xl border-2;
+.body_md {
+  @apply text-md;
+}
+
+.body_sm {
+  @apply text-sm;
+}
+
+.body_xs {
+  @apply text-xs;
 }
