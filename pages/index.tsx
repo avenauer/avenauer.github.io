@@ -3,7 +3,6 @@ import Head from "next/head";
 import Header from "../src/containers/header/header";
 import Intro from "../src/containers/sections/intro";
 import Projects from "../src/components/projects/projects";
-import Paragraph from "../src/components/common/Paragraph";
 
 const Home: NextPage = () => {
   return (
