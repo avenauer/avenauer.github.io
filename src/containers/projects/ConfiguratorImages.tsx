@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import Mask from "../../assets/svg/iphone_mask.svg";
 import Image from "next/image";
 import ImageTest from "../../assets/temp/test.jpg";
 import Mask2 from "../../assets/svg/ipad_mask.svg";
 import Imagetest2 from "../../assets/temp/test_2.jpg";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const ConfiguratorImages = () => {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 11000], [-200, 1500]);
-  const y2 = useTransform(scrollY, [0, 11000], [900, -1400]);
+  const springConfig = {
+    damping: 10,
+    mass: 0.75,
+    stiffness: 50,
+  };
+  const y1 = useSpring(useTransform(scrollY, [0, 11000], [-200, 1500]), springConfig);
+  const y2 = useSpring(useTransform(scrollY, [0, 11000], [900, -1400]), springConfig);
 
   return (
     <>

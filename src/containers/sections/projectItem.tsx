@@ -24,12 +24,12 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
       <WideContainer>
         <motion.div style={{ minHeight: "900px" }} className={`${inView ? "" : ""} relative flex min-h-screen justify-between py-12`}>
           <div className="absolute top-1/2 w-2/5 -translate-y-1/2 transform">
-            <Paragraph className="opacity-70" size="sm" text={role} />
+            <Paragraph className="opacity-70" size="xs" text={role} />
             <Headline className="py-4 opacity-80" size="lg" text={name} />
-            <Paragraph className="max-w-sm block" text={description} size="sm" />
-            <div>{children}</div>
+            <Paragraph className="block max-w-sm" text={description} size="sm" />
+            <div className="my-4">{children}</div>
           </div>
-          <div className="absolute right-0 h-full w-3/5 border-2 border-fuchsia-500">{images}</div>
+          <div className="absolute right-0 h-full w-3/5">{images}</div>
         </motion.div>
       </WideContainer>
     </section>
