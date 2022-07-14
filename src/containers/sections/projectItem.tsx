@@ -1,32 +1,38 @@
 import React, { FC, ReactNode } from "react";
 import WideContainer from "../wrappers/wideContainer";
 import Headline from "../../components/common/Headline";
-import Image from "next/image";
-import ImageTest from "../../assets/temp/test.jpg";
-import Imagetest2 from "../../assets/temp/test_2.jpg";
-import Mask from "../../assets/svg/iphone_mask.svg";
-import Mask2 from "../../assets/svg/ipad_mask.svg";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import Paragraph from "../../components/common/Paragraph";
 
 interface ProjectInfo {
   index: string;
   role: string;
   name: string;
   description: string;
-  tags: ReactNode;
+  children: ReactNode;
   images: ReactNode;
 }
 
-export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, description, tags }) => {
+export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, description, children }) => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+  console.log(inView);
   return (
-    <div className="flex justify-between">
-      <div className="">
-        <span>{role}</span>
-        <Headline size="xl" text={name} />
-        <span>{description}</span>
-        <div>{tags}</div>
-      </div>
-      <div>{images}</div>
-    </div>
+    <section ref={ref}>
+      <WideContainer>
+        <motion.div style={{ minHeight: "900px" }} className={`${inView ? "" : ""} relative flex min-h-screen justify-between py-12`}>
+          <div className="absolute top-1/2 w-2/5 -translate-y-1/2 transform">
+            <Paragraph className="opacity-70" size="sm" text={role} />
+            <Headline className="py-4 opacity-80" size="lg" text={name} />
+            <Paragraph className="max-w-sm block" text={description} size="sm" />
+            <div>{children}</div>
+          </div>
+          <div className="absolute right-0 h-full w-3/5 border-2 border-fuchsia-500">{images}</div>
+        </motion.div>
+      </WideContainer>
+    </section>
   );
 };
 

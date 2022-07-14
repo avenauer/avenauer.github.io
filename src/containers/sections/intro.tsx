@@ -15,7 +15,7 @@ const Intro = () => {
           <span className={`${fontStyle.headline_lg} !inline bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent`}> Designer</span>
           <Paragraph
             size="xs"
-            text="But I prefer to call myself an explorer. I love design and always seek new areas to express myself."
+            text="But I prefer to call myself an explorer. I love to design and always seek new areas to express myself."
             className="mx-auto mt-4 block max-w-md opacity-70"
           />
           <div className="mt-5 flex justify-center">

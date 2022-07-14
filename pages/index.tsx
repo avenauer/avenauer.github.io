@@ -23,7 +23,6 @@ const Home: NextPage = () => {
         <Intro />
         <Projects />
       </div>
-      <div id="section_1"></div>
     </>
   );
 };

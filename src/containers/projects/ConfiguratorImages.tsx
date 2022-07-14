@@ -1,0 +1,38 @@
+import React from "react";
+import Mask from "../../assets/svg/iphone_mask.svg";
+import Image from "next/image";
+import ImageTest from "../../assets/temp/test.jpg";
+import Mask2 from "../../assets/svg/ipad_mask.svg";
+import Imagetest2 from "../../assets/temp/test_2.jpg";
+import { motion, useScroll, useTransform } from "framer-motion";
+
+const ConfiguratorImages = () => {
+  const { scrollY } = useScroll();
+  const y1 = useTransform(scrollY, [0, 11000], [-200, 1500]);
+  const y2 = useTransform(scrollY, [0, 11000], [900, -1400]);
+
+  return (
+    <>
+      <motion.div
+        style={{
+          y: y1,
+          WebkitMaskPosition: "center",
+          WebkitMaskRepeat: "no-repeat",
+          display: "inline-block",
+          WebkitMaskImage: `url("${Mask2.src}")`,
+        }}
+        className="absolute left-0 right-0 mx-auto h-96 w-full max-w-lg"
+      >
+        <Image alt="Mountains" src={Imagetest2} layout="fill" objectFit="contain" />
+      </motion.div>
+      <motion.div
+        style={{ y: y2, WebkitMaskPosition: "center", WebkitMaskRepeat: "no-repeat", display: "inline-block", WebkitMaskImage: `url("${Mask.src}")` }}
+        className="absolute left-0 right-0 mx-auto h-96 w-full max-w-lg"
+      >
+        <Image alt="Mountains" src={ImageTest} layout="fill" objectFit="contain" />
+      </motion.div>
+    </>
+  );
+};
+
+export default ConfiguratorImages;
