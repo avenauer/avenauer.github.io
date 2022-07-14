@@ -27,7 +27,9 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
             <Paragraph className="opacity-70" size="xs" text={role} />
             <Headline className="py-4 opacity-80" size="lg" text={name} />
             <Paragraph className="block max-w-sm" text={description} size="sm" />
-            <div className="my-4">{children}</div>
+            <div title={`Tools I used to create ${name}`} className="inline-block mt-8 max-w-md">
+              {children}
+            </div>
           </div>
           <div className="absolute right-0 h-full w-3/5">{images}</div>
         </motion.div>
