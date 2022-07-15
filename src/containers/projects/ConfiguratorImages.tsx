@@ -30,13 +30,13 @@ const ConfiguratorImages = () => {
         }}
         className="absolute left-0 right-0 mx-auto h-96 w-full max-w-lg"
       >
-        <Image prefix="" alt="Mountains" src={Imagetest2} layout="fill" objectFit="contain" />
+        <Image prefix="" alt="Mountains" src="test_2.jpg" layout="fill" objectFit="contain" />
       </motion.div>
       <motion.div
         style={{ y: y2, WebkitMaskPosition: "center", WebkitMaskRepeat: "no-repeat", display: "inline-block", WebkitMaskImage: `url("${Mask.src}")` }}
         className="absolute left-0 right-0 mx-auto h-96 w-full max-w-lg"
       >
-        <Image alt="Mountains" src={ImageTest} layout="fill" objectFit="contain" />
+        <Image alt="Mountains" src="test.jpg" layout="fill" objectFit="contain" />
       </motion.div>
     </>
   );
