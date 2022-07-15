@@ -4,9 +4,9 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: "/my-website",
   images: {
-    domains: ['localhost', 'avenauer.github.com'],
+    domains: ["localhost", "avenauer.github.com"],
     loader: "akamai",
-    path: "my-website/assets/temp"
+    path: `assets/temp`
   }
 };
 
