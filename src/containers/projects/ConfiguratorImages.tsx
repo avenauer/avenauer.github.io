@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import Mask from "../../assets/svg/iphone_mask.svg";
 import Image from "next/image";
-import ImageTest from "../../assets/temp/test.jpg";
+import ImageTest from "../../../public/assets/temp/test.jpg";
 import Mask2 from "../../assets/svg/ipad_mask.svg";
-import Imagetest2 from "../../assets/temp/test_2.jpg";
+import Imagetest2 from "../../../public/assets/temp/test_2.jpg";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const ConfiguratorImages = () => {

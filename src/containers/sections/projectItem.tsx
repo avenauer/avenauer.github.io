@@ -18,7 +18,6 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
   const { ref, inView } = useInView({
     threshold: 0,
   });
-  console.log(inView);
   return (
     <section ref={ref}>
       <WideContainer>
@@ -27,7 +26,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
             <Paragraph className="opacity-70" size="xs" text={role} />
             <Headline className="py-4 opacity-80" size="lg" text={name} />
             <Paragraph className="block max-w-sm" text={description} size="sm" />
-            <div title={`Tools I used to create ${name}`} className="inline-block mt-8 max-w-md">
+            <div title={`Tools I used to create ${name}`} className="mt-8 inline-block max-w-md">
               {children}
             </div>
           </div>
