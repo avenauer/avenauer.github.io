@@ -1,4 +1,4 @@
-const isProd = process.env.NODE_ENV === "production";
+export const isProd = process.env.NODE_ENV === "production";
 
 export const Budopoint = {
   budopoint1: `${isProd ? "/my-website" : ""}/assets/budopoint/budopoint_1.jpg"`,
@@ -25,4 +25,10 @@ export const VR = {
   vr2: `${isProd ? "/my-website" : ""}/assets/vr/vrilift_2.jpg`,
   vr3: `${isProd ? "/my-website" : ""}/assets/vr/vrilift_3.jpg`,
   vr4: `${isProd ? "/my-website" : ""}/assets/vr/vrilift_4.jpg`,
+};
+
+export const Mask = {
+  phone: `${isProd ? "/my-website" : ""}/assets/svg/phone_mask.svg`,
+  tablet: `${isProd ? "/my-website" : ""}/assets/svg/tablet_mask.svg`,
+  dice: `${isProd ? "/my-website" : ""}/assets/svg/dice_mask.svg`,
 };

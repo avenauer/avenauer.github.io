@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { VR } from "../../components/common/images";
+import Mask2 from "../../assets/svg/iphone_mask.svg";
 
 const ConfiguratorImages = () => {
   const { scrollY } = useScroll();
@@ -14,7 +15,30 @@ const ConfiguratorImages = () => {
 
   return (
     <>
-      <img src={VR.vr1} alt="" />
+      {/*<div
+        style={{
+          WebkitMaskPosition: "center",
+          WebkitMaskRepeat: "no-repeat",
+          display: "inline-block",
+          WebkitMaskImage: `url(${Mask.phone})`,
+        }}
+        className="h-96 w-96 bg-zinc-100"
+      />*/}
+      <motion.div
+        style={{
+          y: y1,
+          WebkitMaskPosition: "center",
+          WebkitMaskRepeat: "no-repeat",
+          display: "inline-block",
+          WebkitMaskImage: `url("${Mask2.src}")`,
+        }}
+        className="h-3/5"
+      >
+        <picture className="inline-block h-full">
+          <source srcSet={VR.vr1} type="image/jpeg" />
+          <img className="mx-auto h-full" src={VR.vr1} alt="Landscape picture" />
+        </picture>
+      </motion.div>
       {/*  <motion.div
         style={{
           y: y1,
