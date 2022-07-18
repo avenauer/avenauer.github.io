@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { VR } from "../../components/common/images";
 
 const ConfiguratorImages = () => {
   const { scrollY } = useScroll();
@@ -13,7 +14,8 @@ const ConfiguratorImages = () => {
 
   return (
     <>
-    {/*  <motion.div
+      <img src={VR.vr1} alt="" />
+      {/*  <motion.div
         style={{
           y: y1,
           WebkitMaskPosition: "center",
