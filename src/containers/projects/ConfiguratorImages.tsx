@@ -1,9 +1,4 @@
-import React, { useRef } from "react";
-import Mask from "../../assets/svg/iphone_mask.svg";
-import Image from "next/image";
-import ImageTest from "../../../public/assets/temp/test.jpg";
-import Mask2 from "../../assets/svg/ipad_mask.svg";
-import Imagetest2 from "../../../public/assets/temp/test_2.jpg";
+import React from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const ConfiguratorImages = () => {
@@ -18,7 +13,7 @@ const ConfiguratorImages = () => {
 
   return (
     <>
-      <motion.div
+    {/*  <motion.div
         style={{
           y: y1,
           WebkitMaskPosition: "center",
@@ -29,13 +24,14 @@ const ConfiguratorImages = () => {
         className="absolute left-0 right-0 mx-auto h-96 w-full max-w-lg"
       >
         <Image prefix="" alt="Mountains" src={`${process.env.BASE_PATH}/assets/temp/test_2.jpg`} layout="fill" objectFit="contain" />
+          <img src={ImageTest} alt=""/>
       </motion.div>
       <motion.div
         style={{ y: y2, WebkitMaskPosition: "center", WebkitMaskRepeat: "no-repeat", display: "inline-block", WebkitMaskImage: `url("${Mask.src}")` }}
         className="absolute left-0 right-0 mx-auto h-96 w-full max-w-lg"
       >
         <Image alt="Mountains" src={ImageTest} layout="fill" objectFit="contain" />
-      </motion.div>
+      </motion.div>*/}
     </>
   );
 };
