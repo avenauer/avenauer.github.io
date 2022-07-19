@@ -1,9 +1,9 @@
 import React, { FC, ReactNode } from "react";
-import WideContainer from "../wrappers/wideContainer";
-import Headline from "../../components/common/Headline";
+import WideContainer from "../../components/common/wrappers/wideContainer";
+import Headline from "../../components/common/text/Headline";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import Paragraph from "../../components/common/Paragraph";
+import Paragraph from "../../components/common/text/Paragraph";
 
 interface ProjectInfo {
   index: string;

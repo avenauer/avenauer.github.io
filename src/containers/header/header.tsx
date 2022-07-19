@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./logo";
 import ToggleTheme from "./toggleTheme";
-import WideContainer from "../wrappers/wideContainer";
+import WideContainer from "../../components/common/wrappers/wideContainer";
 
 const Header = () => {
   return (

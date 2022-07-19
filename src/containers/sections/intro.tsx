@@ -1,8 +1,8 @@
 import React from "react";
-import WideContainer from "../wrappers/wideContainer";
-import Headline from "../../components/common/Headline";
-import Paragraph from "../../components/common/Paragraph";
-import CustomLink from "../../components/common/CustomLink";
+import WideContainer from "../../components/common/wrappers/wideContainer";
+import Headline from "../../components/common/text/Headline";
+import Paragraph from "../../components/common/text/Paragraph";
+import CustomLink from "../../components/common/link/CustomLink";
 import fontStyle from "../../../styles/typography.module.scss";
 
 const Intro = () => {

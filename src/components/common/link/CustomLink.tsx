@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import fontStyle from "../../../styles/typography.module.scss";
+import fontStyle from "../../../../styles/typography.module.scss";
 
 const CustomLink = ({ to, text }: { to: string; text: string }) => {
   return (

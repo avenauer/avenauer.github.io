@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
-import ConfiguratorImages from "../../containers/projects/ConfiguratorImages";
+import BudopointImages from "../../containers/projects/BudopointImages";
 
 export const PortfolioProjects = [
   {
@@ -9,7 +9,7 @@ export const PortfolioProjects = [
     role: "UI Developer",
     desc: "Clean & minimalistic builder's supply store",
     tags: ["next.js", "react-ts", "tailwind"],
-    images: <ConfiguratorImages />,
+    images: <BudopointImages />,
   },
   {
     id: 2,
@@ -24,8 +24,8 @@ export const PortfolioProjects = [
     name: "iLift Configurator",
     role: "Front-end Developer ∙ UI ∙ 3D",
     desc: "Elevator configurator with availability to see a full product in 360°.",
-    tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane Render"],
-    images: <ConfiguratorImages />,
+    tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
+    images: <div />,
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const Projects = () => {
     <>
       {PortfolioProjects.map((value) => {
         return (
-          <div key={value.id} className="">
+          <div key={value.id}>
             <ProjectItem key={value.id} index={`section_${value.id}`} name={value.name} role={value.role} description={value.desc} images={value.images}>
               {value.tags.map((tag, index) => (
                 <span title={tag} className="mx-0.5 mb-3 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-tag text-white" key={index}>
