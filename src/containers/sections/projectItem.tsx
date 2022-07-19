@@ -19,9 +19,9 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
     threshold: 0,
   });
   return (
-    <section ref={ref}>
+    <section ref={ref} className="my-56">
       <WideContainer>
-        <motion.div style={{ minHeight: "900px" }} className={`${inView ? "" : ""} relative flex min-h-screen justify-between py-12`}>
+        <motion.div style={{ minHeight: "900px" }} className={`${inView ? "" : ""} relative flex min-h-screen justify-between`}>
           <div className="absolute top-1/2 w-2/5 -translate-y-1/2 transform">
             <Paragraph className="opacity-70" size="xs" text={role} />
             <Headline className="py-4 opacity-80" size="lg" text={name} />
@@ -30,7 +30,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
               {children}
             </div>
           </div>
-          <div className="absolute right-0 h-full w-3/5">{images}</div>
+          <div className="absolute right-0 h-full w-4/5">{images}</div>
         </motion.div>
       </WideContainer>
     </section>

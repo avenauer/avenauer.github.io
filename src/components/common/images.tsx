@@ -1,15 +1,15 @@
 export const isProd = process.env.NODE_ENV === "production";
 
-export const Budopoint = {
-  budopoint1: `${isProd ? "/my-website" : ""}/assets/budopoint/budopoint_1.jpg"`,
-  budopoint2: `${isProd ? "/my-website" : ""}/assets/budopoint/budopoint_2.jpg"`,
+export const Bp = {
+  bp1: `${isProd ? "/my-website" : ""}/assets/budopoint/budopoint_1.jpg`,
+  bp2: `${isProd ? "/my-website" : ""}/assets/budopoint/budopoint_2.jpg`,
 };
 
 export const Kranplatt = {
-  kranplatt1: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_1.jpg`,
-  kranplatt2: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_2.jpg`,
-  kranplatt3: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_3.jpg`,
-  kranplatt4: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_4.jpg`,
+  k1: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_1.jpg`,
+  k2: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_2.jpg`,
+  k3: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_3.jpg`,
+  k4: `${isProd ? "/my-website" : ""}/assets/kranplatt/kranplatt_4.jpg`,
 };
 
 export const NFTDice = {

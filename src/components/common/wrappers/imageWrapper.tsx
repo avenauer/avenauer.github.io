@@ -26,11 +26,11 @@ const ImageWrapper: FC<ImageConfig> = ({ mask, range, className, children }) => 
         style={{
           WebkitMaskPosition: "center",
           WebkitMaskRepeat: "no-repeat",
-          display: "inline-block",
+          WebkitMaskSize: "auto 100%",
           WebkitMaskImage: `url(${mask === "iphone" ? IphoneMask.src : mask === "ipad" ? IpadMask.src : mask === "dice" ? DiceMask.src : IphoneMask.src})`,
           y: parallax,
         }}
-        className={`h-3/5 ${className}`}
+        className={`${className} absolute inline-block`}
       >
         {children}
       </motion.div>
