@@ -11,6 +11,11 @@ body {
   min-width: 375px;
 }
 
+.introduction {
+  max-height: 1200px;
+  min-height: 600px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -20,5 +25,14 @@ a {
   box-sizing: border-box;
 }
 
-.item_image {
+.iphone_wrap {
+  @apply w-1/4;
+}
+
+.ipad_wrap {
+  @apply w-3/5;
+}
+
+.dice_wrap {
+  @apply w-1/5;
 }

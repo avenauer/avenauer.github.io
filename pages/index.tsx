@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../src/containers/header/header";
 import Intro from "../src/containers/sections/intro";
 import Projects from "../src/components/projects/projects";
+import Clients from "../src/containers/sections/clients";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <Header />
         <Intro />
         <Projects />
+          <Clients />
       </div>
     </>
   );

@@ -8,7 +8,7 @@ import fontStyle from "../../../styles/typography.module.scss";
 const Intro = () => {
   return (
     <section>
-      <WideContainer className="h-screen">
+      <WideContainer className="introduction h-screen">
         <article className="absolute top-1/3 left-1/2 w-full max-w-xl -translate-x-1/2 -translate-y-1/2 text-center">
           <Headline size="lg" text="Glad to see you here!" className="opacity-80" />
           <Headline size="lg" text="I’m UI Developer &" className="!inline-block opacity-80" />

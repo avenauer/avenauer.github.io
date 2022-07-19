@@ -8,14 +8,6 @@ import NftImages from "../../containers/projects/NftImages";
 export const PortfolioProjects = [
   {
     id: 1,
-    name: "Budopoint store",
-    role: "UI Developer",
-    desc: "Clean & minimalistic builder's supply store",
-    tags: ["next.js", "react-ts", "tailwind"],
-    images: <BudopointImages />,
-  },
-  {
-    id: 2,
     name: "Kranplatt",
     role: "Front-end Developer ∙ UI Designer ∙ 3D",
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
@@ -23,9 +15,17 @@ export const PortfolioProjects = [
     images: <KranplattImages />,
   },
   {
+    id: 2,
+    name: "Budopoint store",
+    role: "UI Developer",
+    desc: "Clean & minimalistic builder's supply store",
+    tags: ["next.js", "react-ts", "tailwind"],
+    images: <BudopointImages />,
+  },
+  {
     id: 3,
     name: "iLift Configurator",
-    role: "Front-end Developer ∙ UI ∙ 3D",
+    role: "Front-end Developer ∙ UI Designer ∙ 3D",
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
     images: <ConfiguratorImages />,

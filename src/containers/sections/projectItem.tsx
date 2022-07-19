@@ -30,7 +30,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
               {children}
             </div>
           </div>
-          <div className="absolute right-0 h-full w-4/5">{images}</div>
+          <div className="absolute right-0 h-full w-full lg:w-3/5">{images}</div>
         </motion.div>
       </WideContainer>
     </section>
