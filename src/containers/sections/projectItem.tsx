@@ -22,7 +22,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
     <section ref={ref} className="my-56">
       <WideContainer>
         <motion.div style={{ minHeight: "900px" }} className={`${inView ? "" : ""} relative flex min-h-screen justify-between`}>
-          <div className="absolute top-1/2 w-2/5 -translate-y-1/2 transform">
+          <div className="absolute top-1/2 w-4/5 -translate-y-1/2 transform md:w-2/5">
             <Paragraph className="opacity-70" size="xs" text={role} />
             <Headline className="py-4 opacity-80" size="lg" text={name} />
             <Paragraph className="block max-w-sm" text={description} size="sm" />
