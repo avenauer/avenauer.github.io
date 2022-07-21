@@ -19,7 +19,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
     threshold: 0,
   });
   return (
-    <section ref={ref} className="my-56">
+    <section ref={ref} className="py-32">
       <WideContainer>
         <motion.div style={{ minHeight: "900px" }} className={`${inView ? "" : ""} relative flex min-h-screen justify-between`}>
           <div className="absolute top-1/2 w-4/5 -translate-y-1/2 transform md:w-2/5">
