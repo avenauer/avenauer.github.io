@@ -39,18 +39,20 @@ const Companies = [
 
 const Clients = () => {
   return (
-    <BaseContainer className="py-10 text-center">
-      <Paragraph text="Here are companies that I had a pleasure to work with" size="lg" />
-      <div className="flex py-8 px-8 flex-wrap">
-        {Companies.map((value, index) => {
-          return (
-            <div className="p-4 mx-auto h-20" key={index}>
-              <Picture className="picture-fill" src={value.img} alt={value.name} />
-            </div>
-          );
-        })}
-      </div>
-    </BaseContainer>
+    <section>
+      <BaseContainer className="py-10 text-center">
+        <Paragraph text="Here are companies that I had a pleasure to work with" size="lg" />
+        <div className="flex flex-wrap py-8 px-8">
+          {Companies.map((value, index) => {
+            return (
+              <div className="mx-auto h-20 p-4" key={index}>
+                <Picture className="picture-fill" src={value.img} alt={value.name} />
+              </div>
+            );
+          })}
+        </div>
+      </BaseContainer>
+    </section>
   );
 };
 
