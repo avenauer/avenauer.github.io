@@ -49,7 +49,7 @@ const Projects = () => {
             {value.tags.map((tag, index) => (
               <span
                 title={tag}
-                className="mx-0.5 mb-3 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-t-xs text-white md:text-tag"
+                className=" mx-0.5 mb-1 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-t-xs text-white md:mb-3 md:text-tag"
                 key={index}
               >
                 {tag}
