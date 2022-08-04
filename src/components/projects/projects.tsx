@@ -9,7 +9,7 @@ export const PortfolioProjects = [
   {
     id: 1,
     name: "Kranplatt",
-    role: "Front-end Developer ∙ UI Designer ∙ 3D",
+    role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
     images: <KranplattImages />,
@@ -25,7 +25,7 @@ export const PortfolioProjects = [
   {
     id: 3,
     name: "iLift Configurator",
-    role: "Front-end Developer ∙ UI Designer ∙ 3D",
+    role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
     images: <ConfiguratorImages />,
@@ -47,7 +47,11 @@ const Projects = () => {
         return (
           <ProjectItem key={value.id} index={`section_${value.id}`} name={value.name} role={value.role} description={value.desc} images={value.images}>
             {value.tags.map((tag, index) => (
-              <span title={tag} className="mx-0.5 mb-3 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-tag text-white" key={index}>
+              <span
+                title={tag}
+                className="mx-0.5 mb-3 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-t-xs text-white md:text-tag"
+                key={index}
+              >
                 {tag}
               </span>
             ))}
