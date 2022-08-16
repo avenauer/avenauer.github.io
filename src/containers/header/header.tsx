@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./logo";
+import Logo from "../../components/common/logo";
 import ToggleTheme from "./toggleTheme";
 import WideContainer from "../../components/common/wrappers/wideContainer";
 
