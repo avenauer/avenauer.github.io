@@ -4,6 +4,7 @@ import BudopointImages from "../../containers/projects/BudopointImages";
 import KranplattImages from "../../containers/projects/KranplattImages";
 import ConfiguratorImages from "../../containers/projects/ConfiguratorImages";
 import NftImages from "../../containers/projects/NftImages";
+import { motion } from "framer-motion";
 
 export const PortfolioProjects = [
   {
@@ -40,6 +41,22 @@ export const PortfolioProjects = [
   },
 ];
 
+const tagItem = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+    y: -10,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 const Projects = () => {
   return (
     <>
@@ -47,13 +64,14 @@ const Projects = () => {
         return (
           <ProjectItem key={value.id} index={`section_${value.id}`} name={value.name} role={value.role} description={value.desc} images={value.images}>
             {value.tags.map((tag, index) => (
-              <span
+              <motion.div
+                variants={tagItem}
                 title={tag}
                 className=" mx-0.5 mb-1 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-t-xs text-white md:mb-3 md:text-tag"
                 key={index}
               >
                 {tag}
-              </span>
+              </motion.div>
             ))}
           </ProjectItem>
         );
