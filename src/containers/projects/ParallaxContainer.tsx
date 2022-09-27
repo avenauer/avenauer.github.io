@@ -10,7 +10,17 @@ const ParallaxContainer = ({ projectId }: { projectId: number }) => {
         value.images?.map((item, index) => {
           {
             return (
-              <ImageWrapper key={item.id} src={item.src} scale={item.scale} range={item.range} className={item.class} mask={item.mask} revert={item.revert} />
+              <ImageWrapper
+                key={index}
+                src={item.src}
+                scale={item.scale}
+                range={item.range}
+                className={item.class}
+                mask={item.mask}
+                revert={item.revert}
+                name={value.name}
+                projectId={item.id}
+              />
             );
           }
         })
