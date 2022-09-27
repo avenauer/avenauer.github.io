@@ -1,8 +1,7 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode, useRef } from "react";
 import WideContainer from "../../components/common/wrappers/wideContainer";
 import Headline from "../../components/common/text/Headline";
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Paragraph from "../../components/common/text/Paragraph";
 
 const container = {
@@ -45,24 +44,25 @@ interface ProjectInfo {
   images: ReactNode;
 }
 
-export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, description, children }) => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-    triggerOnce: false,
-  });
+const inputRange = 100;
 
-  console.log(inView);
+export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, description, children }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useSpring(useTransform(scrollYProgress, [-1, 2], [-inputRange, inputRange]), { damping: 10, mass: 0.75, stiffness: 50 });
+
   return (
-    <section ref={ref} className={`py-32`}>
+    <section key={index} className={`border-2 border-red-500`}>
       <WideContainer>
+        <div ref={ref} className="absolute left-1/2 top-1/2 z-50 h-0 w-0"></div>
         <motion.div style={{ minHeight: "900px" }} className={`relative flex min-h-screen justify-between`}>
           <motion.div
             variants={container}
             initial="hidden"
-            animate={`${inView ? "visible" : "hidden"}`}
+            animate="visible"
             className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md"
           >
-            <motion.div variants={item}>
+            <motion.div style={{ y: y }} variants={item}>
               <Paragraph className="opacity-70" size="xs" text={role} />
             </motion.div>
             <motion.div variants={item}>

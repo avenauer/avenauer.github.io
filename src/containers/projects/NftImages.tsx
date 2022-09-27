@@ -1,7 +1,7 @@
 import React from "react";
 import ImageWrapper from "../../components/common/wrappers/imageWrapper";
 import Picture from "../../components/common/wrappers/picture";
-import { NFTDice, VR } from "../../components/common/images";
+import { NFTDice } from "../../components/common/images";
 
 const NftImages = () => {
   return (
