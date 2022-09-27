@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
 import { motion } from "framer-motion";
-import { Kranplatt } from "../common/images";
+import { Bp, Kranplatt, VR, NFTDice } from "../common/images";
 
 export const PortfolioProjects = [
   {
@@ -11,10 +11,10 @@ export const PortfolioProjects = [
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
     images: [
-      { id: 1, src: Kranplatt.k1, scale: 1, class: "bottom-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 1, src: Kranplatt.k1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
       { id: 2, src: Kranplatt.k2, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 3, src: Kranplatt.k3, scale: 1, class: "right-0", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 4, src: Kranplatt.k4, scale: 1, class: "left-1/2", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 3, src: Kranplatt.k3, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 4, src: Kranplatt.k4, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
     ],
   },
   {
@@ -23,7 +23,10 @@ export const PortfolioProjects = [
     role: "UI Developer",
     desc: "Clean & minimalistic builder's supply store",
     tags: ["next.js", "react-ts", "tailwind"],
-    images: null,
+    images: [
+      { id: 5, src: Bp.bp1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 6, src: Bp.bp2, scale: 1, class: "top-0", range: [-100, 100], mask: "ipad", revert: false },
+    ],
   },
   {
     id: 30,
@@ -31,7 +34,12 @@ export const PortfolioProjects = [
     role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
-    images: null,
+    images: [
+      { id: 7, src: VR.vr1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 8, src: VR.vr2, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 9, src: VR.vr3, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 10, src: VR.vr4, scale: 1, class: "top-0", range: [-100, 100], mask: "ipad", revert: true },
+    ],
   },
   {
     id: 40,
@@ -39,7 +47,13 @@ export const PortfolioProjects = [
     role: "UI Designer ∙ 3D",
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
-    images: null,
+    images: [
+      { id: 11, src: NFTDice.nft1, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
+      { id: 12, src: NFTDice.nft2, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
+      { id: 13, src: NFTDice.nft3, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: true },
+      { id: 14, src: NFTDice.nft4, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 15, src: NFTDice.nft5, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+    ],
   },
 ];
 

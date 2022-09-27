@@ -1,7 +1,7 @@
-import React, { FC, ReactNode, useRef } from "react";
+import React, { FC, ReactNode } from "react";
 import WideContainer from "../../components/common/wrappers/wideContainer";
 import Headline from "../../components/common/text/Headline";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Paragraph from "../../components/common/text/Paragraph";
 import ParallaxContainer from "../projects/ParallaxContainer";
 
