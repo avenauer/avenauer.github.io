@@ -1,10 +1,7 @@
 import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
-import BudopointImages from "../../containers/projects/BudopointImages";
-import KranplattImages from "../../containers/projects/KranplattImages";
-import ConfiguratorImages from "../../containers/projects/ConfiguratorImages";
-import NftImages from "../../containers/projects/NftImages";
 import { motion } from "framer-motion";
+import { Kranplatt } from "../common/images";
 
 export const PortfolioProjects = [
   {
@@ -13,7 +10,12 @@ export const PortfolioProjects = [
     role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
-    images: <KranplattImages />,
+    images: [
+      { id: 100, src: Kranplatt.k1, scale: 1, class: "bottom-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 101, src: Kranplatt.k2, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 102, src: Kranplatt.k3, scale: 1, class: "right-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 103, src: Kranplatt.k4, scale: 1, class: "left-1/2", range: [-100, 100], mask: "iphone", revert: true },
+    ],
   },
   {
     id: 2,
@@ -21,7 +23,7 @@ export const PortfolioProjects = [
     role: "UI Developer",
     desc: "Clean & minimalistic builder's supply store",
     tags: ["next.js", "react-ts", "tailwind"],
-    images: <BudopointImages />,
+    images: null,
   },
   {
     id: 3,
@@ -29,7 +31,7 @@ export const PortfolioProjects = [
     role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
-    images: <ConfiguratorImages />,
+    images: null,
   },
   {
     id: 4,
@@ -37,7 +39,7 @@ export const PortfolioProjects = [
     role: "UI Designer ∙ 3D",
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
-    images: <NftImages />,
+    images: null,
   },
 ];
 
@@ -62,7 +64,7 @@ const Projects = () => {
     <>
       {PortfolioProjects.map((value) => {
         return (
-          <ProjectItem key={value.id} index={`section_${value.id}`} name={value.name} role={value.role} description={value.desc} images={value.images}>
+          <ProjectItem key={value.id} index={value.id} name={value.name} role={value.role} description={value.desc}>
             {value.tags.map((tag, index) => (
               <motion.div
                 variants={tagItem}

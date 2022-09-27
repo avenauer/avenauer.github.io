@@ -3,6 +3,7 @@ import WideContainer from "../../components/common/wrappers/wideContainer";
 import Headline from "../../components/common/text/Headline";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Paragraph from "../../components/common/text/Paragraph";
+import ParallaxContainer from "../projects/ParallaxContainer";
 
 const container = {
   hidden: {
@@ -36,25 +37,18 @@ const item = {
 };
 
 interface ProjectInfo {
-  index: string;
+  index: number;
   role: string;
   name: string;
   description: string;
   children: ReactNode;
-  images: ReactNode;
 }
 
-const inputRange = 100;
-
-export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, description, children }) => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
-  const y = useSpring(useTransform(scrollYProgress, [-1, 2], [-inputRange, inputRange]), { damping: 10, mass: 0.75, stiffness: 50 });
-
+export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, children }) => {
   return (
     <section key={index} className={`border-2 border-red-500`}>
       <WideContainer>
-        <div ref={ref} className="absolute left-1/2 top-1/2 z-50 h-0 w-0"></div>
+        <div className="absolute left-1/2 top-1/2 z-50 h-0 w-0"></div>
         <motion.div style={{ minHeight: "900px" }} className={`relative flex min-h-screen justify-between`}>
           <motion.div
             variants={container}
@@ -62,7 +56,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
             animate="visible"
             className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md"
           >
-            <motion.div style={{ y: y }} variants={item}>
+            <motion.div variants={item}>
               <Paragraph className="opacity-70" size="xs" text={role} />
             </motion.div>
             <motion.div variants={item}>
@@ -75,7 +69,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ images, index, role, name, descri
               {children}
             </motion.div>
           </motion.div>
-          <div className="absolute right-0 h-full w-full lg:w-3/5">{images}</div>
+          <ParallaxContainer key={`${index}`} projectId={index} />
         </motion.div>
       </WideContainer>
     </section>
