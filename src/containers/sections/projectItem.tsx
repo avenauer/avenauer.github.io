@@ -4,22 +4,7 @@ import Headline from "../../components/common/text/Headline";
 import { motion } from "framer-motion";
 import Paragraph from "../../components/common/text/Paragraph";
 import ParallaxContainer from "../projects/ParallaxContainer";
-
-const container = {
-  hidden: {
-    x: -200,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-      ease: [0.02, 0.6, -0.01, 0.91],
-    },
-  },
-};
+import { animTransition, onLoadAnimation, onLoadInitial } from "../../../styles/easings";
 
 const item = {
   hidden: {
@@ -50,9 +35,9 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
       <WideContainer>
         <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between border-2 border-red-500`}>
           <motion.div
-            variants={container}
-            initial="hidden"
-            animate="visible"
+            initial={onLoadInitial}
+            animate={onLoadAnimation}
+            transition={animTransition}
             className="absolute top-1/3 w-full max-w-xs -translate-y-1/2 transform border-2 border-red-500 md:w-2/5 md:max-w-md"
           >
             <motion.div variants={item}>

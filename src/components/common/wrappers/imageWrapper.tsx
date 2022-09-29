@@ -4,6 +4,7 @@ import IphoneMask from "../../../assets/svg/iphone_mask.svg";
 import IpadMask from "../../../assets/svg/ipad_mask.svg";
 import DiceMask from "../../../assets/svg/dice_mask.svg";
 import Picture from "./picture";
+import { animTransition, onLoadAnimation, onLoadInitial } from "../../../../styles/easings";
 
 interface ImageConfig {
   transition?: boolean;
@@ -22,12 +23,13 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
   const { scrollYProgress } = useScroll({ target: ref });
   const parallax = useSpring(useTransform(scrollYProgress, revert ? [0, 1] : [1, 0], [range[0], range[1]]), { stiffness: 100, damping: 20, mass: 1 });
   const opacityOutput = [0, 1, 1, 0];
-  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.1, 0.9, 1], opacityOutput), { stiffness: 100, damping: 20, mass: 1 });
+  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.05, 0.95, 1], opacityOutput), { stiffness: 100, damping: 20, mass: 1 });
 
   return (
     <>
-      <motion.div ref={ref} className="absolute z-50 h-full left-1/2 top-1/2 h-1 w-1 bg-red-500" />
       <motion.div
+        initial={{ opacity: 0 }}
+        transition={animTransition}
         style={{
           opacity: opacity,
           y: parallax,
@@ -41,6 +43,7 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
           mask === "iphone" ? "iphone_wrap" : mask === "ipad" ? "ipad_wrap" : mask === "dice" ? "dice_wrap" : "iphone_wrap"
         } absolute inline-block`}
       >
+        <motion.div ref={ref} className="absolute left-1/2 top-1/2 z-50 h-full h-1 w-1 bg-red-500" />
         <Picture src={src} alt={`${projectId} ${name} project image`} />
       </motion.div>
     </>
