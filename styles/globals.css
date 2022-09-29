@@ -31,7 +31,7 @@ a {
 }
 
 .iphone_wrap {
-  @apply w-1/4;
+  @apply w-3/12;
 }
 
 .ipad_wrap {
@@ -39,5 +39,5 @@ a {
 }
 
 .dice_wrap {
-  @apply w-1/5;
+  @apply w-1/5 w-1;
 }

@@ -46,15 +46,14 @@ interface ProjectInfo {
 
 export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, children }) => {
   return (
-    <section key={index} className={`border-2 border-red-500`}>
+    <section key={index}>
       <WideContainer>
-        <div className="absolute left-1/2 top-1/2 z-50 h-0 w-0"></div>
-        <motion.div style={{ minHeight: "900px" }} className={`relative flex min-h-screen justify-between`}>
+        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between border-2 border-red-500`}>
           <motion.div
             variants={container}
             initial="hidden"
             animate="visible"
-            className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md"
+            className="absolute top-1/3 w-full max-w-xs -translate-y-1/2 transform border-2 border-red-500 md:w-2/5 md:max-w-md"
           >
             <motion.div variants={item}>
               <Paragraph className="opacity-70" size="xs" text={role} />
@@ -69,7 +68,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
               {children}
             </motion.div>
           </motion.div>
-          <ParallaxContainer key={`${index}`} projectId={index} />
+          <ParallaxContainer projectId={index} />
         </motion.div>
       </WideContainer>
     </section>

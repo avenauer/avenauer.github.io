@@ -6,6 +6,7 @@ import DiceMask from "../../../assets/svg/dice_mask.svg";
 import Picture from "./picture";
 
 interface ImageConfig {
+  transition?: boolean;
   src?: string;
   scale?: number;
   range: number[];
@@ -16,7 +17,7 @@ interface ImageConfig {
   projectId?: number;
 }
 
-const ImageWrapper: FC<ImageConfig> = ({ src, scale, range, className, mask, revert, name, projectId }) => {
+const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, className, mask, revert, name, projectId }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const parallax = useSpring(useTransform(scrollYProgress, revert ? [0, 1] : [1, 0], [range[0], range[1]]), { stiffness: 100, damping: 20, mass: 1 });
@@ -25,7 +26,7 @@ const ImageWrapper: FC<ImageConfig> = ({ src, scale, range, className, mask, rev
 
   return (
     <>
-      <motion.div ref={ref} className="absolute left-1/2 top-1/2 z-50 h-full w-2" />
+      <motion.div ref={ref} className="absolute z-50 h-full left-1/2 top-1/2 h-1 w-1 bg-red-500" />
       <motion.div
         style={{
           opacity: opacity,

@@ -6,7 +6,7 @@ import WideContainer from "../../components/common/wrappers/wideContainer";
 const Header = () => {
   return (
     <header>
-      <WideContainer className="flex items-center justify-between py-4">
+      <WideContainer className="flex items-center justify-between py-12">
         <Logo />
         <ToggleTheme />
       </WideContainer>
