@@ -33,7 +33,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
   return (
     <section key={index}>
       <WideContainer>
-        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between border-2 border-red-500`}>
+        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between`}>
           <motion.div
             initial={onLoadInitial}
             animate={onLoadAnimation}
@@ -41,10 +41,10 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
             className="absolute top-1/3 w-full max-w-xs -translate-y-1/2 transform border-2 border-red-500 md:w-2/5 md:max-w-md"
           >
             <motion.div variants={item}>
-              <Paragraph className="opacity-70" size="xs" text={role} />
+              <Paragraph className="70" size="xs" text={role} />
             </motion.div>
             <motion.div variants={item}>
-              <Headline className="py-2 opacity-80 md:py-4" size="lg" text={name} />
+              <Headline className="py-2 80 md:py-4" size="lg" text={name} />
             </motion.div>
             <motion.div variants={item}>
               <Paragraph className="block max-w-sm" text={description} size="sm" />

@@ -17,6 +17,7 @@
 /build
 
 # misc
+/public/fonts
 .DS_Store
 *.pem
 
