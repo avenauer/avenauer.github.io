@@ -11,11 +11,11 @@
 }
 
 .body_lg {
-  @apply text-md font-medium tracking-tight md:text-lg;
+  @apply text-base font-medium tracking-tight md:text-lg;
 }
 
 .body_md {
-  @apply text-sm md:text-md;
+  @apply text-sm md:text-base;
 }
 
 .body_sm {
@@ -23,5 +23,5 @@
 }
 
 .body_xs {
-  @apply text-t-xs md:text-xs;
+  @apply md:text-xs;
 }
