@@ -4,7 +4,7 @@ import IphoneMask from "../../../assets/svg/iphone_mask.svg";
 import IpadMask from "../../../assets/svg/ipad_mask.svg";
 import DiceMask from "../../../assets/svg/dice_mask.svg";
 import Picture from "./picture";
-import { animTransition, onLoadAnimation, onLoadInitial } from "../../../../styles/easings";
+import { animTransition } from "../../../../styles/easings";
 
 interface ImageConfig {
   transition?: boolean;

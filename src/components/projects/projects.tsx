@@ -11,10 +11,10 @@ export const PortfolioProjects = [
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
     images: [
-      { id: 1, src: Kranplatt.k1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 1, src: Kranplatt.k2, scale: 1, class: "top-1/2 right-1/4", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 1, src: Kranplatt.k3, scale: 1, class: "", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 1, src: Kranplatt.k4, scale: 1, class: "", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 2, src: Kranplatt.k1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 3, src: Kranplatt.k2, scale: 1, class: "top-1/2 right-1/4", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 4, src: Kranplatt.k3, scale: 1, class: "", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 5, src: Kranplatt.k4, scale: 1, class: "", range: [-100, 100], mask: "iphone", revert: true },
     ],
   },
   {
@@ -24,8 +24,8 @@ export const PortfolioProjects = [
     desc: "Clean & minimalistic builder's supply store",
     tags: ["next.js", "react-ts", "tailwind"],
     images: [
-      { id: 2, src: Bp.bp1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 2, src: Bp.bp2, scale: 1, class: "top-0", range: [-100, 100], mask: "ipad", revert: false },
+      { id: 3, src: Bp.bp1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 4, src: Bp.bp2, scale: 1, class: "top-0", range: [-100, 100], mask: "ipad", revert: false },
     ],
   },
   {
@@ -35,10 +35,10 @@ export const PortfolioProjects = [
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
     images: [
-      { id: 3, src: VR.vr1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 3, src: VR.vr2, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 3, src: VR.vr3, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 3, src: VR.vr4, scale: 1, class: "top-0", range: [-100, 100], mask: "ipad", revert: true },
+      { id: 4, src: VR.vr1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 5, src: VR.vr2, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 6, src: VR.vr3, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 7, src: VR.vr4, scale: 1, class: "top-0", range: [-100, 100], mask: "ipad", revert: true },
     ],
   },
   {
@@ -48,11 +48,11 @@ export const PortfolioProjects = [
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
     images: [
-      { id: 4, src: NFTDice.nft1, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
-      { id: 4, src: NFTDice.nft2, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
-      { id: 4, src: NFTDice.nft3, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: true },
-      { id: 4, src: NFTDice.nft4, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 4, src: NFTDice.nft5, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 5, src: NFTDice.nft1, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
+      { id: 6, src: NFTDice.nft2, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
+      { id: 7, src: NFTDice.nft3, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: true },
+      { id: 8, src: NFTDice.nft4, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 9, src: NFTDice.nft5, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
     ],
   },
 ];
@@ -83,7 +83,7 @@ const Projects = () => {
               <motion.div
                 variants={tagItem}
                 title={tag}
-                className="mx-0.5 mb-1 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-t-xs text-white md:mb-3 md:text-tag"
+                className="text-t-xs md:text-tag mx-0.5 mb-1 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-white md:mb-3"
                 key={index}
               >
                 {tag}

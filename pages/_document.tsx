@@ -14,7 +14,6 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link href={`${isProd ? "/my-website/favicon_light.ico" : "/favicon_light.ico"}`} rel="icon" media="(prefers-color-scheme: light)" />
         <link href={`${isProd ? "/my-website/favicon_dark.ico" : "/favicon_dark.ico"}`} rel="icon" media="(prefers-color-scheme: dark)" />
-        <title>Marcin Bieszka - portfolio</title>
       </Head>
       <body>
         <Main />

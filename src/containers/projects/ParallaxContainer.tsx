@@ -9,7 +9,7 @@ const ParallaxContainer = ({ projectId }: { projectId: number }) => {
       {PortfolioProjects.map((value, index) => {
         {
           return (
-            <>
+            <div key={index}>
               {projectId === value.id ? (
                 <>
                   {value.images.map((item) => {
@@ -31,7 +31,7 @@ const ParallaxContainer = ({ projectId }: { projectId: number }) => {
                   })}
                 </>
               ) : null}
-            </>
+            </div>
           );
         }
       })}
