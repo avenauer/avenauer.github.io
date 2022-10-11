@@ -38,10 +38,10 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
             initial={onLoadInitial}
             animate={onLoadAnimation}
             transition={animTransition}
-            className="absolute top-1/3 w-full max-w-xs -translate-y-1/2 transform border-2 border-red-500 md:w-2/5 md:max-w-md"
+            className="absolute top-1/3 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md"
           >
             <motion.div variants={item}>
-              <Paragraph className="70" size="xs" text={role} />
+              <Paragraph className="70" size="sm" text={role} />
             </motion.div>
             <motion.div variants={item}>
               <Headline className="py-2 80 md:py-4" size="lg" text={name} />

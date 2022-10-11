@@ -2,6 +2,7 @@ import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
 import { motion } from "framer-motion";
 import { Bp, Kranplatt, VR, NFTDice } from "../common/images";
+import Paragraph from "../common/text/Paragraph";
 
 export const PortfolioProjects = [
   {
@@ -83,10 +84,10 @@ const Projects = () => {
               <motion.div
                 variants={tagItem}
                 title={tag}
-                className="text-t-xs md:text-tag mx-0.5 mb-1 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-white md:mb-3"
+                className="mx-0.5 mb-0.5 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-white md:mb-2"
                 key={index}
               >
-                {tag}
+                <Paragraph size="xs" text={tag} />
               </motion.div>
             ))}
           </ProjectItem>

@@ -15,7 +15,7 @@ const Intro = () => {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           initial={{ opacity: 0, scale: 0.5, y: 32 }}
           transition={animTransition}
-          className="w-full max-w-lg -translate-x-1/2 -translate-y-1/2 border-2 px-2 text-center lg:max-w-2xl"
+          className="w-full max-w-lg -translate-x-1/2 -translate-y-1/2 px-2 text-center lg:max-w-2xl"
         >
           <Headline size="lg" text="Glad to see you here!" className="!inline-block" />
           <Headline size="lg" text="I’m UI Developer &" className="!inline-block" />
@@ -23,11 +23,11 @@ const Intro = () => {
           <Paragraph
             size="md"
             text="But I prefer to call myself an explorer. I love to design and always seek new areas to express myself."
-            className="mx-auto mt-4 block max-w-md md:max-w-md"
+            className="mx-auto mt-4 block max-w-sm sm:max-w-md md:max-w-md"
           />
-          <div className="mt-5 flex justify-center">
+          <div className="mt-4 flex justify-center">
             <CustomLink to="#section_1" text="View recent projects" />
-            <Paragraph size="xs" text="or" className="mx-2 sm:mx-4 md:mx-6" />
+            <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
             <CustomLink to="/" text="Feel free to say hello" />
           </div>
         </motion.article>
