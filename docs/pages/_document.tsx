@@ -1,6 +1,6 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
-import { isProd } from "../src/components/common/images";
+import { isProd } from "../../src/components/common/images";
 
 export default function Document() {
   return (

@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   reactStrictMode: true,
-  basePath: `${isProd ? "/my-website" : ""}`,
+  basePath: `${isProd ? "" : ""}`,
   images: {
     loader: "akamai",
     path: ""
