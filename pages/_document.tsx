@@ -9,12 +9,12 @@ export default function Document() {
       <Head>
         {/*TODO: Meta description*/}
         <meta name="description" content="Typescript Application" />
-        <link rel="apple-touch-icon" href={`%PUBLIC_URL%/my-website/logo_sm.jpg`} />
+        <link rel="apple-touch-icon" href={`/logo_sm.jpg`} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <link href={`${isProd ? "/_next" : ""}/static/favicon_light.ico`} rel="icon" media="(prefers-color-scheme: light)" />
-        <link href={`${isProd ? "/_next" : ""}/static/favicon_dark.ico`} rel="icon" media="(prefers-color-scheme: dark)" />
+        <link href={`/favicon_light.ico`} rel="icon" media="(prefers-color-scheme: light)" />
+        <link href={`/favicon_dark.ico`} rel="icon" media="(prefers-color-scheme: dark)" />
       </Head>
       <body>
         <Main />
