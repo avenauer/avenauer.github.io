@@ -47,7 +47,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
               <Headline className="py-2 80 md:py-4" size="lg" text={name} />
             </motion.div>
             <motion.div variants={item}>
-              <Paragraph className="block max-w-sm" text={description} size="sm" />
+              <Paragraph className="block max-w-sm" text={description} size="md" />
             </motion.div>
             <motion.div title={`Tools I used to create ${name}`} className="mt-8 inline-block max-w-md">
               {children}

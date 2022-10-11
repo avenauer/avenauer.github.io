@@ -14,11 +14,14 @@ export default function ToggleTheme() {
     return theme === "dark";
   }
   return (
-    <motion.div className="group" initial={{ opacity: 0, scale: 0.5, y: 0 }} animate={onLoadAnimation} transition={animTransition}>
-      <div
-        className="group-dark:hover:bg-blue-500 relative h-6 w-10 cursor-pointer rounded-full bg-zinc-900 dark:bg-white"
-        onClick={() => setTheme(Dark() ? "light" : "dark")}
-      >
+    <motion.div
+      onClick={() => setTheme(Dark() ? "light" : "dark")}
+      className="group cursor-pointer p-4 md:p-2"
+      initial={{ opacity: 0, scale: 0.5, y: 0 }}
+      animate={onLoadAnimation}
+      transition={animTransition}
+    >
+      <div className="group-dark:hover:bg-blue-500 relative h-6 w-10 rounded-full bg-zinc-900 dark:bg-white">
         <motion.svg animate={{ x: Dark() ? 0 : 15 }} width="24" height="24">
           <motion.circle transition={{ duration: 0.2 }} cx={12} cy={12} r={10} className={`duration-200 ${Dark() ? "fill-zinc-900" : "fill-white"}`} />
           <motion.circle

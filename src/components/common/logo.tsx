@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <Link passHref href="/">
       <motion.div
-        className="cursor-pointer hover:fill-blue-500"
+        className="cursor-pointer p-4 hover:fill-blue-500 md:p-2"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={onLoadAnimation}
         transition={animTransition}
