@@ -16,15 +16,15 @@ export default function ToggleTheme() {
   return (
     <motion.div className="group" initial={{ opacity: 0, scale: 0.5, y: 0 }} animate={onLoadAnimation} transition={animTransition}>
       <div
-        className="group-dark:hover:bg-blue-500 relative h-6 w-10 cursor-pointer rounded-full bg-zinc-900 group-hover:bg-blue-500 dark:bg-white"
+        className="group-dark:hover:bg-blue-500 relative h-6 w-10 cursor-pointer rounded-full bg-zinc-900 dark:bg-white"
         onClick={() => setTheme(Dark() ? "light" : "dark")}
       >
         <motion.svg animate={{ x: Dark() ? 0 : 15 }} width="24" height="24">
           <motion.circle transition={{ duration: 0.2 }} cx={12} cy={12} r={10} className={`duration-200 ${Dark() ? "fill-zinc-900" : "fill-white"}`} />
           <motion.circle
             transition={{ duration: 0.2 }}
-            animate={{ x: Dark() ? 0 : 8, scale: Dark() ? 1 : 0.4, opacity: Dark() ? 1 : 0 }}
-            className={`group-dark:hover:fill-blue-500 group-hover:fill-blue-500 ${Dark() ? "fill-white" : "fill-zinc-900"}`}
+            animate={{ x: Dark() ? 0 : 8, scale: Dark() ? 1 : 0.4, fill: Dark() ? "red" : "blue", opacity: Dark() ? 1 : 0 }}
+            className={`group-dark:hover:fill-blue-500 ${Dark() ? "fill-white" : "fill-zinc-900"}`}
             cx={18}
             cy={12}
             r={8}
