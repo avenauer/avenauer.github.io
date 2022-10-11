@@ -1,10 +1,11 @@
 import React, { FC, useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import IphoneMask from "../../../assets/svg/iphone_mask.svg";
-import IpadMask from "../../../assets/svg/ipad_mask.svg";
-import DiceMask from "../../../assets/svg/dice_mask.svg";
 import Picture from "./picture";
 import { animTransition } from "../../../../styles/easings";
+
+import IphoneMask from "../../../../public/static/iphone_mask.svg";
+import IpadMask from "../../../../public/static/ipad_mask.svg";
+import DiceMask from "../../../../public/static/dice_mask.svg";
 
 interface ImageConfig {
   transition?: boolean;
@@ -37,7 +38,7 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
           WebkitMaskPosition: "center",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskSize: "auto 100%",
-          WebkitMaskImage: `url(${mask})`,
+          WebkitMaskImage: `url(${mask === "iphone" ? IphoneMask.src : mask === "ipad" ? IpadMask.src : mask === "dice" ? DiceMask.src : IphoneMask.src})`,
         }}
         className={`${className} ${
           mask === "iphone" ? "iphone_wrap" : mask === "ipad" ? "ipad_wrap" : mask === "dice" ? "dice_wrap" : "iphone_wrap"
