@@ -2,11 +2,10 @@ import React, { FC, useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Picture from "./picture";
 import { animTransition } from "../../../../styles/easings";
-import { isProd } from "../../../../pages/_document";
 
-const IphoneMask = isProd ? "/docs/iphone_mask.svg" : "/iphone_mask.svg";
-const IpadMask = isProd ? "/docs/ipad_mask.svg" : "/ipad_mask.svg";
-const DiceMask = isProd ? "/docs/dice_mask.svg" : "/dice_mask.svg";
+const IphoneMask = "/iphone_mask.svg";
+const IpadMask = "/ipad_mask.svg";
+const DiceMask = "/dice_mask.svg";
 
 interface ImageConfig {
   transition?: boolean;
