@@ -1,8 +1,13 @@
+import Kranplatt1 from "../../assets/images/kranplatt/kranplatt_1.jpg";
+import Kranplatt2 from "../../assets/images/kranplatt/kranplatt_2.jpg";
+import Kranplatt3 from "../../assets/images/kranplatt/kranplatt_3.jpg";
+import Kranplatt4 from "../../assets/images/kranplatt/kranplatt_4.jpg";
+
 export const Kranplatt = {
-  k1: "assets/kranplatt/kranplatt_1.jpg",
-  k2: "assets/kranplatt/kranplatt_2.jpg",
-  k3: "assets/kranplatt/kranplatt_3.jpg",
-  k4: "assets/kranplatt/kranplatt_4.jpg",
+  k1: Kranplatt1.src,
+  k2: Kranplatt2.src,
+  k3: Kranplatt3.src,
+  k4: Kranplatt4.src,
 };
 
 export const Bp = {

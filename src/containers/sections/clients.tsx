@@ -46,7 +46,7 @@ const Clients = () => {
           {Companies.map((value, index) => {
             return (
               <div className="mx-auto h-12 p-2 md:h-20 md:p-4" key={index}>
-                <Picture className="picture-fill" src={value.img} alt={value.name} />
+                <Picture src={value.img} alt={value.name} />
               </div>
             );
           })}

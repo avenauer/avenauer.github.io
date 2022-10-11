@@ -17,10 +17,6 @@ body {
   min-height: 600px;
 }
 
-.picture-fill > img {
-  @apply fill-black dark:fill-white;
-}
-
 a {
   color: inherit;
   text-decoration: none;
