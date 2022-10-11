@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Marcin Bieszka - portfolio</title>
       </Head>
-      <ThemeProvider attribute="class">
+      <ThemeProvider enableSystem={true} defaultTheme="light" attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>
     </>

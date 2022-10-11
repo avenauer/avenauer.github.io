@@ -7,7 +7,7 @@ import Footer from "../src/containers/footer/footer";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-white duration-200 ease-smooth dark:bg-zinc-900">
+    <div className="bg-white duration-500 ease-smooth dark:bg-zinc-900">
       <Header />
       <Intro />
       <Projects />
