@@ -2,6 +2,7 @@ import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
 import { motion } from "framer-motion";
 import { Bp, Kranplatt, VR, NFTDice } from "../common/images";
+import IphoneMask from "../../assets/svg/iphone_mask.svg";
 
 export const PortfolioProjects = [
   {
@@ -11,10 +12,10 @@ export const PortfolioProjects = [
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
     images: [
-      { id: 2, src: Kranplatt.k1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 3, src: Kranplatt.k2, scale: 1, class: "top-1/2 right-1/4", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 4, src: Kranplatt.k3, scale: 1, class: "", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 5, src: Kranplatt.k4, scale: 1, class: "", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 2, src: Kranplatt.k1, scale: 1, class: "top-0", range: [-100, 100], mask: IphoneMask.src, revert: false },
+      { id: 3, src: Kranplatt.k2, scale: 1, class: "top-1/2 right-1/4", range: [-100, 100], mask: IphoneMask.src, revert: false },
+      { id: 4, src: Kranplatt.k3, scale: 1, class: "", range: [-100, 100], mask: IphoneMask.src, revert: true },
+      { id: 5, src: Kranplatt.k4, scale: 1, class: "", range: [-100, 100], mask: IphoneMask.src, revert: true },
     ],
   },
   {

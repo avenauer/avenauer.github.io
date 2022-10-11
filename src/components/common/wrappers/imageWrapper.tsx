@@ -37,7 +37,7 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
           WebkitMaskPosition: "center",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskSize: "auto 100%",
-          WebkitMaskImage: `url(${mask === "iphone" ? IphoneMask.src : mask === "ipad" ? IpadMask.src : mask === "dice" ? DiceMask.src : IphoneMask.src})`,
+          WebkitMaskImage: `url(${mask})`,
         }}
         className={`${className} ${
           mask === "iphone" ? "iphone_wrap" : mask === "ipad" ? "ipad_wrap" : mask === "dice" ? "dice_wrap" : "iphone_wrap"
