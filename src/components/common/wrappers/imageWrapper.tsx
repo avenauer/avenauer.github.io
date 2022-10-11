@@ -2,11 +2,6 @@ import React, { FC, useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Picture from "./picture";
 import { animTransition } from "../../../../styles/easings";
-import { isProd } from "../../../../pages/_document";
-
-const IphoneMask = isProd ? "/static/iphone_mask.svg" : "/static/iphone_mask.svg";
-const IpadMask = isProd ? "/static/ipad_mask.svg" : "/static/ipad_mask.svg";
-const DiceMask = isProd ? "/static/dice_mask.svg" : "/static/dice_mask.svg";
 
 interface ImageConfig {
   transition?: boolean;
@@ -39,7 +34,15 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
           WebkitMaskPosition: "center",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskSize: "auto 100%",
-          WebkitMaskImage: `url(${mask === "iphone" ? IphoneMask : mask === "ipad" ? IpadMask : mask === "dice" ? DiceMask : IphoneMask})`,
+          WebkitMaskImage: `url(${
+            mask === "iphone"
+              ? "/static/iphone_mask.svg"
+              : mask === "ipad"
+              ? "/static/ipad_mask.svg"
+              : mask === "dice"
+              ? "/static/dice_mask.svg"
+              : "/static/iphone_mask.svg"
+          })`,
         }}
         className={`${className} ${
           mask === "iphone" ? "iphone_wrap" : mask === "ipad" ? "ipad_wrap" : mask === "dice" ? "dice_wrap" : "iphone_wrap"
