@@ -1,27 +1,27 @@
 .headline_xl {
-  @apply block text-2xl font-light leading-tight tracking-wider md:text-3xl;
+  @apply block border border-red-500 font-light leading-tight tracking-wider;
 }
 
 .headline_lg {
-  @apply block text-xl font-normal leading-tight md:text-3xl;
+  @apply block border-2 text-3xl font-medium leading-tight sm:text-4xl md:text-5xl;
 }
 
 .body_xl {
-  @apply text-lg font-medium leading-tight tracking-tight md:text-xl;
+  @apply text-lg leading-tight tracking-tight;
 }
 
 .body_lg {
-  @apply text-base font-medium tracking-tight md:text-lg;
+  @apply border tracking-tight;
 }
 
 .body_md {
-  @apply text-sm md:text-base;
+  @apply border;
 }
 
 .body_sm {
-  @apply text-xs md:text-sm;
+  @apply border;
 }
 
 .body_xs {
-  @apply md:text-xs;
+  @apply border;
 }

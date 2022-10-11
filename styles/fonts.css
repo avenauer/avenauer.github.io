@@ -1,21 +1,25 @@
 @font-face {
-  font-family: "NotHelvetica"; /*Can be any text*/
-  src: local("thin"), url("../docs/fonts/thin.ttf") format("truetype");
+  font-family: "NotHelvetica";
+  src: url("../fonts/thin.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "NotHelvetica"; /*Can be any text*/
-  src: local("regular"), url("../docs/fonts/regular.ttf") format("truetype");
+  font-family: "NotHelvetica";
+  src: url("../fonts/regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-  font-family: "NotHelvetica"; /*Can be any text*/
-  src: local("medium"), url("../docs/fonts/medium.ttf") format("truetype");
+  font-family: "NotHelvetica";
+  src: url("../fonts/medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-  font-family: "NotHelvetica"; /*Can be any text*/
-  src: local("bold"), url("../docs/fonts/bold.ttf") format("truetype");
+  font-family: "NotHelvetica";
+  src: url("../fonts/bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }
