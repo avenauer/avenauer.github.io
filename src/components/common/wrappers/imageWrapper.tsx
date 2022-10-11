@@ -3,9 +3,9 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Picture from "./picture";
 import { animTransition } from "../../../../styles/easings";
 
-const IphoneMask = "/static/iphone_mask.svg";
-const IpadMask = "/static/ipad_mask.svg";
-const DiceMask = "/static/dice_mask.svg";
+const IphoneMask = "/iphone_mask.svg";
+const IpadMask = "/ipad_mask.svg";
+const DiceMask = "/dice_mask.svg";
 
 interface ImageConfig {
   transition?: boolean;
