@@ -31,7 +31,7 @@ interface ProjectInfo {
 
 export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, children }) => {
   return (
-    <section>
+    <section >
       <WideContainer>
         <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between`}>
           <motion.div

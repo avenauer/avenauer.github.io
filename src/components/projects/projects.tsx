@@ -22,7 +22,7 @@ export const PortfolioProjects = [
     id: 2,
     name: "Budopoint store",
     role: "UI Developer",
-    desc: "Clean & minimalistic builder's supply store",
+    desc: "Clean & minimalistic builder's supply store.",
     tags: ["next.js", "react-ts", "tailwind"],
     images: [
       { id: 3, src: Bp.bp1, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: false },
