@@ -1,8 +1,6 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
 
-export const isProd = process.env.NODE_ENV === "production";
-
 export default function Document() {
   return (
     <Html lang="pl">
