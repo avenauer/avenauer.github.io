@@ -18,7 +18,7 @@ const Intro = () => {
   const { theme } = useTheme();
   return (
     <section>
-      <WideContainer className="introduction my-12 flex flex-col items-center justify-center">
+      <WideContainer className="introduction md:my-12 flex flex-col items-center justify-center">
         <motion.div className="mb-6 w-56" animate={{ opacity: 1, scale: 1, y: 0 }} initial={{ opacity: 0, scale: 0.1, y: 128 }} transition={animTransition}>
           {theme === "dark" ? (
             <Picture className={faceClass} src={DarkFace.src} alt={"My face image"} />
