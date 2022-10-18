@@ -8,6 +8,7 @@ export const PortfolioProjects = [
   {
     id: 1,
     name: "Kranplatt",
+    linkTo: "https://kranplatt.com",
     role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
@@ -21,6 +22,7 @@ export const PortfolioProjects = [
   {
     id: 2,
     name: "Budopoint store",
+    linkTo: "https://budopoint.pl",
     role: "UI Developer",
     desc: "Clean & minimalistic builder's supply store.",
     tags: ["next.js", "react-ts", "tailwind"],
@@ -32,6 +34,7 @@ export const PortfolioProjects = [
   {
     id: 3,
     name: "iLift Configurator",
+    linkTo: "https://vr.ilift.com.pl",
     role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
@@ -45,6 +48,7 @@ export const PortfolioProjects = [
   {
     id: 4,
     name: "NFT Dice Club",
+    linkTo: "https://diceclubnft.com",
     role: "UI Designer ∙ 3D",
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
@@ -79,7 +83,7 @@ const Projects = () => {
     <>
       {PortfolioProjects.map((value) => {
         return (
-          <ProjectItem key={value.id} index={value.id} name={value.name} role={value.role} description={value.desc}>
+          <ProjectItem key={value.id} link={value.linkTo} index={value.id} name={value.name} role={value.role} description={value.desc}>
             {value.tags.map((tag, index) => (
               <motion.div
                 variants={tagItem}

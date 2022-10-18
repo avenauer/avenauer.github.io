@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Paragraph from "../../components/common/text/Paragraph";
 import ParallaxContainer from "../projects/ParallaxContainer";
 import { animTransition, onLoadAnimation, onLoadInitial } from "../../../styles/easings";
+import CustomLink from "../../components/common/link/CustomLink";
 
 const item = {
   hidden: {
@@ -23,17 +24,18 @@ const item = {
 
 interface ProjectInfo {
   index: number;
+  link: string;
   role: string;
   name: string;
   description: string;
   children: ReactNode;
 }
 
-export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, children }) => {
+export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, description, children }) => {
   return (
     <section>
       <WideContainer>
-        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between border-2 border-yellow-500`}>
+        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between`}>
           <motion.div transition={animTransition} className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md">
             <motion.div variants={item}>
               <Paragraph className="70" size="sm" text={role} />
@@ -43,8 +45,9 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, c
             </motion.div>
             <motion.div variants={item}>
               <Paragraph className="block max-w-sm" text={description} size="md" />
+              <CustomLink className="inline-block pt-8" target={true} to={link} text={`Explore ${name}`} />
             </motion.div>
-            <motion.div title={`Tools I used to create ${name}`} className="mt-8 inline-block max-w-md">
+            <motion.div title={`Tools I used to create ${name}`} className="pt-3 max-w-md">
               {children}
             </motion.div>
           </motion.div>
