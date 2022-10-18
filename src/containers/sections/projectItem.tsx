@@ -45,9 +45,9 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, descript
             </motion.div>
             <motion.div variants={item}>
               <Paragraph className="block max-w-sm" text={description} size="md" />
-              <CustomLink className="inline-block pt-8" target={true} to={link} text={`Explore ${name}`} />
+              <CustomLink ariaLabel="Open project" className="inline-block pt-8" target={true} to={link} text={`Explore ${name}`} />
             </motion.div>
-            <motion.div title={`Tools I used to create ${name}`} className="pt-3 max-w-md">
+            <motion.div title={`Tools I used to create ${name}`} className="max-w-md pt-3">
               {children}
             </motion.div>
           </motion.div>

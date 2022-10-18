@@ -47,9 +47,9 @@ const Intro = () => {
             className="mx-auto mt-4 block max-w-sm sm:max-w-md md:max-w-md"
           />
           <div className="mt-4 flex justify-center">
-            <CustomLink to="#section_1" text="View recent projects" />
+            <CustomLink ariaLabel="Show recent projects" to="#section_1" text="View recent projects" />
             <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
-            <CustomLink to="/" text="Feel free to say hello" />
+            <CustomLink ariaLabel="Open contact page" to="/" text="Feel free to say hello" />
           </div>
         </motion.article>
       </WideContainer>
