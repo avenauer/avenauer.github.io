@@ -7,6 +7,8 @@ const Logo = () => {
   return (
     <Link passHref href="/">
       <motion.a
+        aria-label="Open main page"
+        rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={onLoadAnimation}
         transition={animTransition}

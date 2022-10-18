@@ -44,10 +44,10 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, descript
               <Headline className="80 py-2 md:py-4" size="lg" text={name} />
             </motion.div>
             <motion.div variants={item}>
-              <Paragraph className="block max-w-sm" text={description} size="md" />
-              <CustomLink ariaLabel="Open project" className="inline-block pt-8" target={true} to={link} text={`Explore ${name}`} />
+              <Paragraph className="block max-w-sm mb-8" text={description} size="md" />
+              <CustomLink ariaLabel="Open project" className="inline-block" target={true} to={link} text={`Explore ${name}`} />
             </motion.div>
-            <motion.div title={`Tools I used to create ${name}`} className="max-w-md pt-3">
+            <motion.div title={`Tools I used to create ${name}`} className="max-w-md pt-4">
               {children}
             </motion.div>
           </motion.div>
