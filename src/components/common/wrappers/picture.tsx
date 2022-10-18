@@ -1,6 +1,6 @@
 import React from "react";
 
-const Picture = ({ className, src, alt }: { className?: string; src: string; alt: string }) => {
+const Picture = ({ className, src, alt }: { className?: string; src: any; alt: string }) => {
   return (
     <picture title={alt} className={`${className}`}>
       <source srcSet={src} />

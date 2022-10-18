@@ -48,7 +48,7 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
           mask === "iphone" ? "iphone_wrap" : mask === "ipad" ? "ipad_wrap" : mask === "dice" ? "dice_wrap" : "iphone_wrap"
         } absolute inline-block`}
       >
-        <motion.div ref={ref} className="absolute left-1/2 top-1/2 z-50 h-full h-1 w-1 bg-red-500" />
+        <motion.div ref={ref} className="absolute left-1/2 top-1/2 -z-50 h-full h-1" />
         <Picture src={src} alt={`${name} project image`} />
       </motion.div>
     </>

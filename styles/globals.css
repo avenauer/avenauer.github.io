@@ -36,9 +36,9 @@ a {
 }
 
 .dice_wrap {
-  @apply w-1/5 w-1;
+  @apply w-1/3;
 }
 
-.circle_mask {
-  clip-path: circle(50% at center);
+.image_container {
+  height: 100%;
 }
