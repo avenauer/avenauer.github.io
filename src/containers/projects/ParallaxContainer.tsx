@@ -1,15 +1,15 @@
-import React from "react";
+import { Fragment } from "react";
 import { motion } from "framer-motion";
 import { PortfolioProjects } from "../../components/projects/projects";
 import ImageWrapper from "../../components/common/wrappers/imageWrapper";
 
 const ParallaxContainer = ({ projectId }: { projectId: number }) => {
   return (
-    <motion.div key={projectId} className="absolute top-1/3 right-0 w-full -translate-y-1/2 border-2 lg:w-3/5">
+    <motion.div key={projectId} className="absolute right-0 h-full w-full border-2 lg:w-3/5">
       {PortfolioProjects.map((value, index) => {
         {
           return (
-            <div key={index}>
+            <Fragment key={index}>
               {projectId === value.id ? (
                 <>
                   {value.images.map((item) => {
@@ -31,7 +31,7 @@ const ParallaxContainer = ({ projectId }: { projectId: number }) => {
                   })}
                 </>
               ) : null}
-            </div>
+            </Fragment>
           );
         }
       })}

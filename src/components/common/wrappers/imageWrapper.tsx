@@ -49,7 +49,7 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
         } absolute inline-block`}
       >
         <motion.div ref={ref} className="absolute left-1/2 top-1/2 z-50 h-full h-1 w-1 bg-red-500" />
-        <Picture src={src} alt={`${projectId} ${name} project image`} />
+        <Picture src={src} alt={`${name} project image`} />
       </motion.div>
     </>
   );

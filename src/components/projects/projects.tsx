@@ -49,11 +49,11 @@ export const PortfolioProjects = [
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
     images: [
-      { id: 5, src: NFTDice.nft1, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
-      { id: 6, src: NFTDice.nft2, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: false },
-      { id: 7, src: NFTDice.nft3, scale: 1, class: "top-0", range: [-100, 100], mask: "dice", revert: true },
-      { id: 8, src: NFTDice.nft4, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 9, src: NFTDice.nft5, scale: 1, class: "top-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 5, src: NFTDice.nft1, scale: 1, class: "top-24", range: [-100, 100], mask: "dice", revert: false },
+      { id: 6, src: NFTDice.nft2, scale: 1, class: "left-24", range: [-100, 100], mask: "dice", revert: false },
+      { id: 7, src: NFTDice.nft3, scale: 1, class: "left-1/2", range: [-100, 100], mask: "dice", revert: true },
+      { id: 8, src: NFTDice.nft4, scale: 1, class: "top-1/3 left-10", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 9, src: NFTDice.nft5, scale: 1, class: "top-0 left-1/2", range: [-100, 100], mask: "iphone", revert: true },
     ],
   },
 ];

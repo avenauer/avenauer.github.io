@@ -31,20 +31,15 @@ interface ProjectInfo {
 
 export const ProjectItem: FC<ProjectInfo> = ({ index, role, name, description, children }) => {
   return (
-    <section >
+    <section>
       <WideContainer>
-        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between`}>
-          <motion.div
-            initial={onLoadInitial}
-            animate={onLoadAnimation}
-            transition={animTransition}
-            className="absolute top-1/3 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md"
-          >
+        <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between border-2 border-yellow-500`}>
+          <motion.div transition={animTransition} className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md">
             <motion.div variants={item}>
               <Paragraph className="70" size="sm" text={role} />
             </motion.div>
             <motion.div variants={item}>
-              <Headline className="py-2 80 md:py-4" size="lg" text={name} />
+              <Headline className="80 py-2 md:py-4" size="lg" text={name} />
             </motion.div>
             <motion.div variants={item}>
               <Paragraph className="block max-w-sm" text={description} size="md" />
