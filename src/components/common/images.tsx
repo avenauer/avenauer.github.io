@@ -17,6 +17,9 @@ import NFT3 from "../../assets/images/nft/die_3.jpg";
 import NFT4 from "../../assets/images/nft/nft_1.jpg";
 import NFT5 from "../../assets/images/nft/nft_2.jpg";
 
+import Light from '../../assets/images/myphoto.jpg';
+import Dark from '../../assets/images/myphotodark.jpg';
+
 export const Kranplatt = {
   k1: Kranplatt1.src,
   k2: Kranplatt2.src,
@@ -42,4 +45,9 @@ export const NFTDice = {
   nft3: NFT3.src,
   nft4: NFT4.src,
   nft5: NFT5.src,
+};
+
+export const Face = {
+  facelight: Light.src,
+  facedark: Dark.src,
 };

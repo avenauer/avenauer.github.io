@@ -23,6 +23,7 @@ a {
 }
 
 * {
+  -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
 }
 
@@ -36,4 +37,8 @@ a {
 
 .dice_wrap {
   @apply w-1/5 w-1;
+}
+
+.circle_mask {
+  clip-path: circle(50% at center);
 }

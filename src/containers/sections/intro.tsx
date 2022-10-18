@@ -6,11 +6,26 @@ import CustomLink from "../../components/common/link/CustomLink";
 import fontStyle from "../../../styles/typography.module.scss";
 import { motion } from "framer-motion";
 import { animTransition } from "../../../styles/easings";
+import Picture from "../../components/common/wrappers/picture";
+import { useTheme } from "next-themes";
+import DarkFace from "../../assets/images/myphotodark.jpg";
+import LightFace from "../../assets/images/myphoto.jpg";
+
+const faceClass = "circle_mask pointer-events-none block select-none";
 
 const Intro = () => {
+  //to avoid hydration
+  const { theme } = useTheme();
   return (
     <section>
-      <WideContainer className="introduction flex items-center justify-center">
+      <WideContainer className="introduction my-12 flex flex-col items-center justify-center">
+        <motion.div className="mb-6 w-56" animate={{ opacity: 1, scale: 1, y: 0 }} initial={{ opacity: 0, scale: 0.1, y: 128 }} transition={animTransition}>
+          {theme === "dark" ? (
+            <Picture className={faceClass} src={DarkFace.src} alt={"My face image"} />
+          ) : (
+            <Picture className={faceClass} src={LightFace.src} alt={"My face image"} />
+          )}
+        </motion.div>
         <motion.article
           animate={{ opacity: 1, scale: 1, y: 0 }}
           initial={{ opacity: 0, scale: 0.5, y: 32 }}
