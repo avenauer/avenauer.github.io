@@ -88,7 +88,7 @@ const Projects = () => {
               <motion.div
                 variants={tagItem}
                 title={tag}
-                className="mx-0.5 mb-0.5 inline-block select-none rounded-xl bg-blue-500 py-0.5 px-3 text-white md:mb-2"
+                className="mx-0.5 mb-0.5 inline-block select-none border-2 rounded-full border-blue-500 py-0.5 px-3 md:mb-2"
                 key={index}
               >
                 <Paragraph size="xs" text={tag} />
