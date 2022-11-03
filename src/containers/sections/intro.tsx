@@ -10,6 +10,7 @@ import Picture from "../../components/common/wrappers/picture";
 import { useTheme } from "next-themes";
 import DarkFace from "../../assets/images/myphotodark.jpg";
 import LightFace from "../../assets/images/myphoto.jpg";
+import CustomA from "../../components/common/link/CustomA";
 
 const faceClass = "pointer-events-none block select-none";
 
@@ -17,7 +18,7 @@ const Intro = () => {
   //to avoid hydration
   /*const { theme } = useTheme();*/
   return (
-    <section>
+    <section id="#introduction">
       <WideContainer className="introduction flex flex-col items-center justify-center md:my-12">
         <motion.div
           className=" mb-6 w-56 overflow-hidden rounded-full"
@@ -47,9 +48,10 @@ const Intro = () => {
             className="mx-auto mt-4 block max-w-sm sm:max-w-md md:max-w-md"
           />
           <div className="mt-4 flex justify-center">
-            <CustomLink ariaLabel="Show recent projects" to="#section_1" text="View recent projects" />
+            <CustomLink ariaLabel="Show recent projects" to="#project_1" text="View recent projects" />
             <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
             <CustomLink ariaLabel="Open contact page" to="/" text="Feel free to say hello" />
+            <CustomA aria="send email" text="Avenauer@gmail.com" to="mailto:Avenauer@gmail.com" />
           </div>
         </motion.article>
       </WideContainer>

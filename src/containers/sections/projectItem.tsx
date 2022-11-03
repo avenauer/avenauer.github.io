@@ -33,7 +33,7 @@ interface ProjectInfo {
 
 export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, description, children }) => {
   return (
-    <section>
+    <section id={`project_${index}`}>
       <WideContainer>
         <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between`}>
           <motion.div transition={animTransition} className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md">
@@ -44,7 +44,7 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, descript
               <Headline className="80 py-2 md:py-4" size="lg" text={name} />
             </motion.div>
             <motion.div variants={item}>
-              <Paragraph className="block max-w-sm mb-8" text={description} size="md" />
+              <Paragraph className="mb-8 block max-w-sm" text={description} size="md" />
               <CustomLink ariaLabel="Open project" className="inline-block" target={true} to={link} text={`Explore ${name} →`} />
             </motion.div>
             <motion.div title={`Tools I used to create ${name}`} className="max-w-md pt-4">

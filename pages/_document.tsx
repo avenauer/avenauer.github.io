@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Document() {
   return (
-    <Html lang="pl">
+    <Html className="scroll-smooth" style={{ scrollBehavior: "smooth" }} lang="en">
       <Head>
         {/*TODO: Meta description*/}
         <meta name="description" content="Typescript Application" />

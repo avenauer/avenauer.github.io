@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ProjectItem from "../../containers/sections/projectItem";
 import { motion } from "framer-motion";
 import { Bp, Kranplatt, VR, NFTDice } from "../common/images";
 import Paragraph from "../common/text/Paragraph";
+import Headline from "../common/text/Headline";
+import WideContainer from "../common/wrappers/wideContainer";
 
 export const PortfolioProjects = [
   {
@@ -81,6 +83,10 @@ const tagItem = {
 const Projects = () => {
   return (
     <>
+      <WideContainer className="text-center">
+        <Headline size="lg" text="My recent projects" />
+        <Paragraph size="md" text="If you want to see more" className="mt-2 block" />
+      </WideContainer>
       {PortfolioProjects.map((value) => {
         return (
           <ProjectItem key={value.id} link={value.linkTo} index={value.id} name={value.name} role={value.role} description={value.desc}>
@@ -88,7 +94,7 @@ const Projects = () => {
               <motion.div
                 variants={tagItem}
                 title={tag}
-                className="mx-0.5 mb-0.5 inline-block select-none border-2 rounded-full border-blue-500 py-0.5 px-3 md:mb-2"
+                className="mx-0.5 mb-0.5 inline-block select-none rounded-full border-2 border-blue-500 py-0.5 px-3 md:mb-2"
                 key={index}
               >
                 <Paragraph size="xs" text={tag} />
