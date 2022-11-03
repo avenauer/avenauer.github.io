@@ -5,6 +5,7 @@ import { Bp, Kranplatt, VR, NFTDice } from "../common/images";
 import Paragraph from "../common/text/Paragraph";
 import Headline from "../common/text/Headline";
 import WideContainer from "../common/wrappers/wideContainer";
+import CustomLink from "../common/link/CustomLink";
 
 export const PortfolioProjects = [
   {
@@ -83,9 +84,12 @@ const tagItem = {
 const Projects = () => {
   return (
     <>
-      <WideContainer className="text-center">
+      <WideContainer className="text-center py-6">
         <Headline size="lg" text="My recent projects" />
-        <Paragraph size="md" text="If you want to see more" className="mt-2 block" />
+        <div className="mt-4">
+          <Paragraph size="md" text="Here are my last works I've worked on, want to see more? " className="mt-2" />
+          <CustomLink ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Contact me." />
+        </div>
       </WideContainer>
       {PortfolioProjects.map((value) => {
         return (

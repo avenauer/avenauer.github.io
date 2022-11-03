@@ -19,7 +19,7 @@ const Intro = () => {
   /*const { theme } = useTheme();*/
   return (
     <section id="#introduction">
-      <WideContainer className="introduction flex flex-col items-center justify-center md:my-12">
+      <WideContainer className="introduction flex flex-col items-center justify-center">
         <motion.div
           className=" mb-6 w-56 overflow-hidden rounded-full"
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -50,8 +50,7 @@ const Intro = () => {
           <div className="mt-4 flex justify-center">
             <CustomLink ariaLabel="Show recent projects" to="#project_1" text="View recent projects" />
             <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
-            <CustomLink ariaLabel="Open contact page" to="/" text="Feel free to say hello" />
-            <CustomA aria="send email" text="Avenauer@gmail.com" to="mailto:Avenauer@gmail.com" />
+            <CustomLink ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Feel free to say hello" />
           </div>
         </motion.article>
       </WideContainer>

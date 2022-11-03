@@ -13,6 +13,7 @@ body {
 }
 
 .introduction {
+  height: 100vh;
   max-height: 1200px;
   min-height: 600px;
 }
