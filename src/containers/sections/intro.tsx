@@ -11,6 +11,7 @@ import { useTheme } from "next-themes";
 import DarkFace from "../../assets/images/myphotodark.jpg";
 import LightFace from "../../assets/images/myphoto.jpg";
 import CustomA from "../../components/common/link/CustomA";
+import MouseScroll from "../../components/mouseScroll";
 
 const faceClass = "pointer-events-none block select-none";
 
@@ -48,12 +49,20 @@ const Intro = () => {
             className="mx-auto mt-4 block max-w-sm sm:max-w-md md:max-w-md"
           />
           <div className="mt-4 flex justify-center">
-            <CustomLink ariaLabel="Show recent projects" to="#project_1" text="View recent projects" />
+            {/*<CustomLink ariaLabel="Show recent projects" to="#project_1" text="View recent projects" />*/}
+            <a
+              className={`${fontStyle.body_md} group relative font-medium opacity-90 duration-200 ease-smooth`}
+              aria-label="Show recent works"
+              href="#recent_works"
+            >
+              View recent projects
+            </a>
             <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
             <CustomLink ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Feel free to say hello" />
           </div>
         </motion.article>
       </WideContainer>
+      <MouseScroll />
     </section>
   );
 };

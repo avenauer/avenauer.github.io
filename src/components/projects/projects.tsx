@@ -84,7 +84,7 @@ const tagItem = {
 const Projects = () => {
   return (
     <>
-      <WideContainer className="text-center py-6">
+      <WideContainer id="recent_works" className="py-6 text-center">
         <Headline size="lg" text="My recent projects" />
         <div className="mt-4">
           <Paragraph size="md" text="Here are my last works I've worked on, want to see more? " className="mt-2" />
