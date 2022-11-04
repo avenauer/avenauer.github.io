@@ -4,7 +4,7 @@ import Headline from "../../components/common/text/Headline";
 import { motion } from "framer-motion";
 import Paragraph from "../../components/common/text/Paragraph";
 import ParallaxContainer from "../projects/ParallaxContainer";
-import { animTransition, onLoadAnimation, onLoadInitial } from "../../../styles/easings";
+import { animTransition } from "../../../styles/easings";
 import CustomLink from "../../components/common/link/CustomLink";
 
 const item = {

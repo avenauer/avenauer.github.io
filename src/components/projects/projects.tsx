@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
 import { motion } from "framer-motion";
-import { Bp, Kranplatt, VR, NFTDice } from "../common/images";
+import { Bp, Kranplatt, NFTDice, VR } from "../common/images";
 import Paragraph from "../common/text/Paragraph";
 import Headline from "../common/text/Headline";
 import WideContainer from "../common/wrappers/wideContainer";

@@ -1,7 +1,6 @@
 import React from "react";
 import Paragraph from "../../components/common/text/Paragraph";
 import BaseContainer from "../../components/common/wrappers/baseContainer";
-import Headline from "../../components/common/text/Headline";
 
 const Experience = () => {
   return (

@@ -17,8 +17,8 @@ import NFT3 from "../../assets/images/nft/die_3.jpg";
 import NFT4 from "../../assets/images/nft/nft_1.jpg";
 import NFT5 from "../../assets/images/nft/nft_2.jpg";
 
-import Light from '../../assets/images/myphoto.jpg';
-import Dark from '../../assets/images/myphotodark.jpg';
+import Light from "../../assets/images/myphoto.jpg";
+import Dark from "../../assets/images/myphotodark.jpg";
 
 export const Kranplatt = {
   k1: Kranplatt1.src,

@@ -13,6 +13,7 @@ export default function ToggleTheme() {
   function Dark() {
     return theme === "dark";
   }
+
   return (
     <motion.div
       onClick={() => setTheme(Dark() ? "light" : "dark")}
