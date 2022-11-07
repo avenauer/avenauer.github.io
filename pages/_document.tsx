@@ -5,8 +5,10 @@ export default function Document() {
   return (
     <Html className="scroll-smooth" style={{ scrollBehavior: "smooth" }} lang="en">
       <Head>
-        {/*TODO: Meta description*/}
-        <meta name="description" content="Typescript Application" />
+        <meta
+          name="description"
+          content="Hello there, I'm Marcin! Gdańsk / Poland based UI Developer & Designer. I love to design unique, clean, minimalistic things & turning them into reality."
+        />
         <link rel="apple-touch-icon" href={`/logo_sm.jpg`} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
