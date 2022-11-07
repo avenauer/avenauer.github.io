@@ -7,7 +7,10 @@ import fontStyle from "../../../styles/typography.module.scss";
 import { motion } from "framer-motion";
 import { animTransition } from "../../../styles/easings";
 import Picture from "../../components/common/wrappers/picture";
+import { useTheme } from "next-themes";
+import DarkFace from "../../assets/images/myphotodark.jpg";
 import LightFace from "../../assets/images/myphoto.jpg";
+import CustomA from "../../components/common/link/CustomA";
 import MouseScroll from "../../components/mouseScroll";
 
 const faceClass = "pointer-events-none block select-none";
