@@ -21,6 +21,7 @@ export default function ToggleTheme() {
       initial={{ opacity: 0, scale: 0.5, y: 0 }}
       animate={onLoadAnimation}
       transition={animTransition}
+      title={`Turn on ${Dark() ? "light" : "dark"} mode`}
     >
       <div className="group-dark:hover:bg-blue-500 relative h-6 w-10 rounded-full bg-zinc-900 dark:bg-white">
         <motion.svg animate={{ x: Dark() ? 0 : 15 }} width="24" height="24">
