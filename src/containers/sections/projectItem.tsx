@@ -34,7 +34,7 @@ interface ProjectInfo {
 export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, description, children }) => {
   return (
     <section id={`project_${index}`}>
-      <WideContainer>
+      <WideContainer className="py-6">
         <motion.div style={{ minHeight: "900px" }} className={`relative flex justify-between`}>
           <motion.div transition={animTransition} className="absolute top-1/2 w-full max-w-xs -translate-y-1/2 transform md:w-2/5 md:max-w-md">
             <motion.div variants={item}>
