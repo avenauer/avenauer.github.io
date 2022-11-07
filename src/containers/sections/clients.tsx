@@ -7,6 +7,7 @@ import IliftLogo from "../../assets/svg/companies/ilift.svg";
 import QuantLogo from "../../assets/svg/companies/quant.svg";
 import CayenneLogo from "../../assets/svg/companies/cayenne.svg";
 import BaseContainer from "../../components/common/wrappers/baseContainer";
+import Headline from "../../components/common/text/Headline";
 
 const Companies = [
   {
@@ -40,7 +41,7 @@ const Clients = () => {
   return (
     <section>
       <BaseContainer className="py-10 text-center">
-        <Paragraph text="Here are companies that I had a pleasure to work with" size="lg" />
+        <Headline className="mx-auto w-full max-w-xl" size="lg" text="Here are companies that I had a pleasure to work with" />
         <div className="flex flex-wrap py-8 px-8">
           {Companies.map((value, index) => {
             return (
