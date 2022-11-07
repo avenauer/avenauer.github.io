@@ -22,7 +22,7 @@ const Intro = () => {
     <section id="#introduction">
       <WideContainer className="introduction flex flex-col items-center justify-center">
         <motion.div
-          className=" mb-6 w-56 overflow-hidden rounded-full"
+          className="border-2 mb-6 w-32 md:w-1/5 lg:w-56 overflow-hidden rounded-full"
           animate={{ opacity: 1, scale: 1, y: 0 }}
           initial={{ opacity: 0, scale: 0.1, y: 128 }}
           transition={animTransition}
