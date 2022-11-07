@@ -9,7 +9,7 @@ export default function Document() {
           name="og:description"
           content="Hello there, I'm Marcin! Gdańsk / Poland based UI Developer & Designer. I love to design unique, clean, minimalistic things & turning them into reality."
         />
-        <meta property="og:image:secure_url" content="/logo_sm.jpg" />
+        <meta property="og:image:secure_url" content="https://marcinbieszka.com/logo_sm.jpg" />
         <link rel="apple-touch-icon" href={`/logo_sm.jpg`} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
