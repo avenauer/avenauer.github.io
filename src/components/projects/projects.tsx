@@ -6,6 +6,7 @@ import Paragraph from "../common/text/Paragraph";
 import Headline from "../common/text/Headline";
 import WideContainer from "../common/wrappers/wideContainer";
 import CustomLink from "../common/link/CustomLink";
+import {email} from "../../../pages";
 
 export const PortfolioProjects = [
   {
@@ -88,7 +89,7 @@ const Projects = () => {
         <Headline size="lg" text="My recent projects" />
         <div className="mt-4">
           <Paragraph size="md" text="Here are my last works I've worked on, want to see more? " className="mt-2" />
-          <CustomLink ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Contact me." />
+          <CustomLink ariaLabel="Send email" to={`mailto:${email}`} text="Contact me." />
         </div>
       </WideContainer>
       {PortfolioProjects.map((value) => {

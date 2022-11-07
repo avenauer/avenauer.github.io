@@ -5,6 +5,8 @@ import Projects from "../src/components/projects/projects";
 import Clients from "../src/containers/sections/clients";
 import Footer from "../src/containers/footer/footer";
 
+export const email = "mbieszka@proton.me";
+
 const Home: NextPage = () => {
   return (
     <div className="bg-white duration-500 ease-smooth dark:bg-zinc-900">

@@ -1,10 +1,14 @@
 import React from "react";
 import WideContainer from "../../components/common/wrappers/wideContainer";
 import Logo from "../../components/common/logo";
-import CustomA from "../../components/common/link/CustomA";
 import Paragraph from "../../components/common/text/Paragraph";
 import CustomLink from "../../components/common/link/CustomLink";
 import { currentYear } from "../../../pages/_app";
+import { email } from "../../../pages";
+
+const linkedin = "https://www.linkedin.com/in/marcin-bieszka/";
+const github = "https://github.com/avenauer";
+const ig = "https://www.instagram.com/_avenauer/";
 
 const Footer = () => {
   return (
@@ -20,12 +24,12 @@ const Footer = () => {
               size="md"
               text="Feel free to reach me via email, I’m always open to discuss a project or partnership opportunity."
             />
-            <CustomLink className="inline-block p-2 pb-0 pr-0 lg:pl-0" ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Let's talk!" />
+            <CustomLink className="inline-block p-2 pb-0 pr-0 lg:pl-0" ariaLabel="Send email" to={`mailto:${email}`} text="Let's talk!" />
           </div>
           <div className="mt-6 text-right lg:mt-0">
-            <CustomA className="mx-2 inline-block" ariaLabel="github page" to="https://google.com" text="Github" />
-            <CustomA className="mx-2 inline-block" ariaLabel="linkedin page" to="https://google.com" text="Linkedin" />
-            <CustomA className="mx-2 inline-block" ariaLabel="instagram page" to="https://google.com" text="Instagram" />
+            <CustomLink className="mx-2 inline-block" ariaLabel="github page" target={true} to={github} text="Github" />
+            <CustomLink className="mx-2 inline-block" ariaLabel="linkedin page" target={true} to={linkedin} text="Linkedin" />
+            <CustomLink className="mx-2 inline-block" ariaLabel="instagram page" target={true} to={ig} text="Instagram" />
           </div>
         </div>
       </WideContainer>

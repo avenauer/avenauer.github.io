@@ -12,6 +12,7 @@ import DarkFace from "../../assets/images/myphotodark.jpg";
 import LightFace from "../../assets/images/myphoto.jpg";
 import CustomA from "../../components/common/link/CustomA";
 import MouseScroll from "../../components/mouseScroll";
+import { email } from "../../../pages";
 
 const faceClass = "pointer-events-none block select-none";
 
@@ -22,7 +23,7 @@ const Intro = () => {
     <section id="#introduction">
       <WideContainer className="introduction flex flex-col items-center justify-center">
         <motion.div
-          className="border-2 mb-6 w-32 md:w-1/5 lg:w-56 overflow-hidden rounded-full"
+          className="mb-6 w-32 overflow-hidden rounded-full border-2 md:w-1/5 lg:w-56"
           animate={{ opacity: 1, scale: 1, y: 0 }}
           initial={{ opacity: 0, scale: 0.1, y: 128 }}
           transition={animTransition}
@@ -51,7 +52,7 @@ const Intro = () => {
           <div className="mt-4 flex justify-center">
             <CustomA ariaLabel="Show recent projects" to="#recent_works" text="View recent projects" />
             <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
-            <CustomLink ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Feel free to say hello" />
+            <CustomLink ariaLabel="Send email" to={`mailto:${email}`} text="Feel free to say hello" />
           </div>
         </motion.article>
       </WideContainer>
