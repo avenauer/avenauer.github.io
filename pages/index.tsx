@@ -3,6 +3,7 @@ import Header from "../src/containers/header/header";
 import Intro from "../src/containers/sections/intro";
 import Projects from "../src/components/projects/projects";
 import Clients from "../src/containers/sections/clients";
+import Footer from "../src/containers/footer/footer";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
       <Intro />
       <Projects />
       <Clients />
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 };

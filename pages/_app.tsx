@@ -5,6 +5,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 
+export const currentYear = new Date().getFullYear();
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -20,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 `}
       </Script>
       <Head>
-        <title>Marcin Bieszka - portfolio</title>
+        <title>Marcin Bieszka — portfolio {currentYear}</title>
       </Head>
       <ThemeProvider enableSystem={true} defaultTheme="light" attribute="class">
         <Component {...pageProps} />
