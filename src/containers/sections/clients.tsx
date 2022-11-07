@@ -45,7 +45,7 @@ const Clients = () => {
         <div className="py-8">
           {Companies.map((value, index) => {
             return (
-              <div className="mx-auto h-12 p-2 md:h-20 md:p-4" key={index}>
+              <div className="inline-block h-14 w-1/3 p-2 md:h-20 md:w-1/5 md:p-4" key={index}>
                 <Picture src={value.img} alt={value.name} />
               </div>
             );
