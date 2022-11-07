@@ -40,8 +40,8 @@ const Companies = [
 const Clients = () => {
   return (
     <section>
-      <BaseContainer className="py-10 text-center">
-        <Headline className="mx-auto w-full max-w-xl" size="lg" text="Here are companies that I had a pleasure to work with" />
+      <BaseContainer className="pt-8 pb-20 text-center">
+        <Headline className="mx-auto w-full max-w-2xl" size="lg" text="Companies that I had a pleasure to work with" />
         <div className="py-8">
           {Companies.map((value, index) => {
             return (
