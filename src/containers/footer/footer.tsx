@@ -23,13 +23,13 @@ const Footer = () => {
             <CustomLink className="inline-block p-2 pb-0 pr-0 lg:pl-0" ariaLabel="Send email" to="mailto:Avenauer@gmail.com" text="Let's talk!" />
           </div>
           <div className="mt-6 text-right lg:mt-0">
-            <CustomA ariaLabel="github page" className="inline-block p-2 pb-0" to="https://google.com" text="Github" />
-            <CustomA ariaLabel="linkedin page" className="inline-block p-2 pb-0" to="https://google.com" text="Linkedin" />
-            <CustomA ariaLabel="instagram page" className="inline-block p-2 pb-0" to="https://google.com" text="Instagram" />
+            <CustomA className="mx-2 inline-block" ariaLabel="github page" to="https://google.com" text="Github" />
+            <CustomA className="mx-2 inline-block" ariaLabel="linkedin page" to="https://google.com" text="Linkedin" />
+            <CustomA className="mx-2 inline-block" ariaLabel="instagram page" to="https://google.com" text="Instagram" />
           </div>
         </div>
       </WideContainer>
-      <div className="flex flex-col pb-4 pt-2 lg:py-4 text-center">
+      <div className="flex flex-col pb-4 pt-2 text-center lg:py-4">
         <Paragraph size="sm" text={`Marcin Bieszka, © 2017 — ${currentYear}`} />
         <Paragraph size="sm" text="Made with ♡ & nextjs" />
       </div>

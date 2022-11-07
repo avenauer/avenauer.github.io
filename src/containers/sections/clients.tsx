@@ -42,7 +42,7 @@ const Clients = () => {
     <section>
       <BaseContainer className="py-10 text-center">
         <Headline className="mx-auto w-full max-w-xl" size="lg" text="Here are companies that I had a pleasure to work with" />
-        <div className="flex flex-wrap py-8">
+        <div className="py-8">
           {Companies.map((value, index) => {
             return (
               <div className="mx-auto h-12 p-2 md:h-20 md:p-4" key={index}>
