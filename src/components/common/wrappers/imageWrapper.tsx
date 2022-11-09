@@ -20,7 +20,7 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
   const { scrollYProgress } = useScroll({ target: ref });
   const parallax = useSpring(useTransform(scrollYProgress, revert ? [0, 1] : [1, 0], [range[0], range[1]]), { stiffness: 100, damping: 20, mass: 1 });
   const opacityOutput = [0, 1, 1, 0];
-  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.05, 0.95, 1], opacityOutput), { stiffness: 100, damping: 20, mass: 1 });
+  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.03, 0.97, 1], opacityOutput), { stiffness: 100, damping: 20, mass: 1 });
 
   return (
     <>
@@ -50,6 +50,10 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
       >
         <motion.div ref={ref} className="absolute left-1/2 top-1/2 -z-50 h-1" />
         <Picture src={src} alt={`${name} project image`} />
+        {/*For easier control of moving elements in project.tsx*/}
+        <div className="absolute top-0 left-0 z-50 h-full w-full bg-blue-900 bg-opacity-50">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl font-bold">{projectId}</div>
+        </div>
       </motion.div>
     </>
   );

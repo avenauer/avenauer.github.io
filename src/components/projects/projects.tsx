@@ -11,16 +11,17 @@ import { email } from "../../../pages";
 export const PortfolioProjects = [
   {
     id: 1,
+
     name: "Kranplatt",
     linkTo: "https://kranplatt.com",
     role: "Front-end ∙ UI Designer ∙ 3D",
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
     images: [
-      { id: 2, src: Kranplatt.k1, scale: 1, class: "left-1/3", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 3, src: Kranplatt.k2, scale: 1, class: "left-1/2", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 4, src: Kranplatt.k3, scale: 1, class: "left-1/4", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 5, src: Kranplatt.k4, scale: 1, class: "left-0", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 4, src: Kranplatt.k1, scale: 0.9, class: "left-52", range: [-250, 150], mask: "iphone", revert: true },
+      { id: 5, src: Kranplatt.k4, scale: 1, class: "right-0", range: [-350, 100], mask: "iphone", revert: false },
+      { id: 3, src: Kranplatt.k2, scale: 1, class: "left-2/3", range: [-200, 500], mask: "iphone", revert: false },
+      { id: 2, src: Kranplatt.k3, scale: 1.2, class: "top-0 left-0", range: [0, 400], mask: "iphone", revert: false },
     ],
   },
   {
