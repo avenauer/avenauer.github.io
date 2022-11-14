@@ -39,7 +39,3 @@ a {
 .dice_wrap {
   @apply w-3/12;
 }
-
-.image_container {
-  height: 100%;
-}

@@ -5,7 +5,7 @@ import ImageWrapper from "../../components/common/wrappers/imageWrapper";
 
 const ParallaxContainer = ({ projectId }: { projectId: number }) => {
   return (
-    <motion.div key={projectId} className="image_container absolute right-0 flex h-auto w-full items-center lg:w-3/5">
+    <motion.div key={projectId} className="border-2 border-fuchsia-500 lg:absolute right-0 flex h-96 lg:h-full w-full items-center lg:w-3/5">
       {PortfolioProjects.map((value, index) => {
         {
           return (
