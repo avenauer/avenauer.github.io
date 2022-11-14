@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta
-          name="og:description"
+          name="description"
           content="Hello there, I'm Marcin! Gdańsk / Poland based UI Developer & Designer. I love to design unique, clean, minimalistic things & turning them into reality."
         />
         <meta property="og:image:secure_url" content="https://marcinbieszka.com/logo_sm.jpg" />
