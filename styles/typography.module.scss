@@ -1,9 +1,9 @@
 .headline_xl {
-  @apply block border border-red-500 font-light leading-tight tracking-wider;
+  @apply block border border-red-500 font-light leading-tight tracking-wider opacity-90;
 }
 
 .headline_lg {
-  @apply block text-3xl font-medium leading-tight opacity-90 sm:text-4xl lg:text-5xl;
+  @apply block text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl opacity-90;
 }
 
 .body_xl {
@@ -15,13 +15,13 @@
 }
 
 .body_md {
-  @apply text-base sm:text-lg md:text-xl;
+  @apply text-base sm:text-lg md:text-xl opacity-80;
 }
 
 .body_sm {
-  @apply text-sm md:text-base;
+  @apply text-sm md:text-base opacity-60;
 }
 
 .body_xs {
-  @apply text-xs md:text-sm;
+  @apply text-xs md:text-sm opacity-90;
 }
