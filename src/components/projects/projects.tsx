@@ -58,7 +58,7 @@ export const PortfolioProjects = [
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
     images: [
-      { id: 5, src: NFTDice.nft2, scale: 1.15, class: "left-0", range: [-100, 50], mask: "dice", revert: false },
+      { id: 5, src: NFTDice.nft2, scale: 1.15, class: "left-4", range: [-100, 50], mask: "dice", revert: false },
       { id: 6, src: NFTDice.nft1, scale: 0.9, class: "left-1/3", range: [-250, 100], mask: "dice", revert: false },
       { id: 8, src: NFTDice.nft4, scale: 1, class: "right-1/2", range: [-300, 300], mask: "iphone", revert: true },
       { id: 9, src: NFTDice.nft5, scale: 1.1, class: "right-6", range: [-300, 50], mask: "iphone", revert: true },

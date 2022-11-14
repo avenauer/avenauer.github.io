@@ -51,9 +51,9 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
         <motion.div ref={ref} className="absolute left-1/2 top-1/2 -z-50 h-1" />
         <Picture src={src} alt={`${name} project image`} />
         {/*For easier control of moving elements in project.tsx*/}
-        <div className="absolute top-0 left-0 z-50 h-full w-full bg-blue-900 bg-opacity-50">
+        {/*<div className="absolute top-0 left-0 z-50 h-full w-full bg-blue-900 bg-opacity-50">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl font-bold">{projectId}</div>
-        </div>
+        </div>*/}
       </motion.div>
     </>
   );
