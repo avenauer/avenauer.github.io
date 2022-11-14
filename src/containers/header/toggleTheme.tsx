@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { animTransition, onLoadAnimation } from "../../../styles/easings";
-import Paragraph from "../../components/common/text/Paragraph";
 
 export default function ToggleTheme() {
   const [mounted, setMounted] = useState(false);
@@ -25,7 +24,7 @@ export default function ToggleTheme() {
       title={`Turn on ${Dark() ? "light" : "dark"} mode`}
     >
       <div className="group-dark:hover:bg-blue-500 relative h-6 w-10 rounded-full bg-zinc-800 dark:bg-white">
-        <motion.span animate={{ y: Dark() ? 38 : -4 }} className="opacity-90 absolute left-0 right-0 bottom-5 mx-auto text-center text-xs font-medium">
+        <motion.span animate={{ y: Dark() ? 38 : -4 }} className="absolute left-0 right-0 bottom-5 mx-auto text-center text-xs font-medium opacity-90">
           {Dark() ? "DARK" : "LIGHT"}
         </motion.span>
         <motion.svg animate={{ x: Dark() ? 0 : 15 }} width="24" height="24">

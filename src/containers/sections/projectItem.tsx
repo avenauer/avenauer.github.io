@@ -35,8 +35,8 @@ export const ProjectItem: FC<ProjectInfo> = ({ index, link, role, name, descript
   return (
     <section id={`project_${index}`}>
       <WideContainer className="my-12 py-6">
-        <motion.div style={{ minHeight: "900px" }} className={`relative flex flex-col lg:flex-col justify-evenly lg:justify-between`}>
-          <motion.div transition={animTransition} className="lg:absolute top-1/2 w-full max-w-xs lg:-translate-y-1/2 transform md:w-2/5 md:max-w-md">
+        <motion.div style={{ minHeight: "900px" }} className={`relative flex flex-col justify-evenly lg:flex-col lg:justify-between`}>
+          <motion.div transition={animTransition} className="top-1/2 w-full max-w-xs transform md:w-2/5 md:max-w-md lg:absolute lg:-translate-y-1/2">
             <motion.div variants={item}>
               <Paragraph className="70" size="sm" text={role} />
             </motion.div>

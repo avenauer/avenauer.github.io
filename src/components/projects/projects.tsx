@@ -63,7 +63,6 @@ export const PortfolioProjects = [
       { id: 8, src: NFTDice.nft4, scale: 1, class: "right-1/2", range: [-300, 300], mask: "iphone", revert: true },
       { id: 9, src: NFTDice.nft5, scale: 1.1, class: "right-6", range: [-300, 50], mask: "iphone", revert: true },
       { id: 7, src: NFTDice.nft3, scale: 1.1, class: "right-1/4", range: [-100, 100], mask: "dice", revert: true },
-
     ],
   },
 ];

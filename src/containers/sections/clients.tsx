@@ -1,5 +1,4 @@
 import React from "react";
-import Paragraph from "../../components/common/text/Paragraph";
 import Picture from "../../components/common/wrappers/picture";
 import KranplattLogo from "../../assets/svg/companies/kranplatt.svg";
 import BoombitLogo from "../../assets/svg/companies/boombit.svg";
