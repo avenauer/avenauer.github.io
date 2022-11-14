@@ -18,9 +18,9 @@ export const PortfolioProjects = [
     desc: "Simple web application with mobile AR feature & 3D view for better product visualization.",
     tags: ["react", "emotion.js", "framer-motion", "model-viewer", "cinema 4D", "octane render"],
     images: [
-      { id: 4, src: Kranplatt.k1, scale: 0.9, class: "left-52", range: [-250, 150], mask: "iphone", revert: true },
-      { id: 5, src: Kranplatt.k4, scale: 1, class: "right-0", range: [-350, 100], mask: "iphone", revert: false },
+      { id: 4, src: Kranplatt.k1, scale: 1.05, class: "left-1/4", range: [-250, 150], mask: "iphone", revert: true },
       { id: 3, src: Kranplatt.k2, scale: 1, class: "left-2/3", range: [-200, 500], mask: "iphone", revert: false },
+      { id: 5, src: Kranplatt.k4, scale: 1.05, class: "right-0", range: [-350, 100], mask: "iphone", revert: false },
       { id: 2, src: Kranplatt.k3, scale: 1.2, class: "top-0 left-0", range: [0, 400], mask: "iphone", revert: false },
     ],
   },
@@ -32,8 +32,8 @@ export const PortfolioProjects = [
     desc: "Clean & minimalistic builder's supply store.",
     tags: ["next.js", "react-ts", "tailwind"],
     images: [
-      { id: 3, src: Bp.bp2, scale: 1, class: "left-1/4", range: [-100, 100], mask: "ipad", revert: false },
-      { id: 4, src: Bp.bp1, scale: 1, class: "left-1/3", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 3, src: Bp.bp2, scale: 1.05, class: "right-3", range: [-250, 250], mask: "ipad", revert: false },
+      { id: 4, src: Bp.bp1, scale: 1, class: "right-2/3", range: [-150, 100], mask: "iphone", revert: false },
     ],
   },
   {
@@ -44,10 +44,10 @@ export const PortfolioProjects = [
     desc: "Elevator configurator with availability to see a full product in 360°.",
     tags: ["react", "framer-motion", "react-three", "cinema 4D", "octane render"],
     images: [
-      { id: 4, src: VR.vr4, scale: 1, class: "left-0", range: [-100, 100], mask: "ipad", revert: true },
-      { id: 5, src: VR.vr1, scale: 1, class: "left-1/3", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 6, src: VR.vr2, scale: 1, class: "left-1/2", range: [-100, 100], mask: "iphone", revert: false },
-      { id: 7, src: VR.vr3, scale: 1, class: "left-1/4", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 4, src: VR.vr4, scale: 0.85, class: "-right-5", range: [-300, 1], mask: "ipad", revert: true },
+      { id: 5, src: VR.vr1, scale: 1.05, class: "right-12", range: [-50, 400], mask: "iphone", revert: true },
+      { id: 6, src: VR.vr2, scale: 0.9, class: "left-1/3", range: [-100, 100], mask: "iphone", revert: false },
+      { id: 7, src: VR.vr3, scale: 1, class: "left-0", range: [-300, 400], mask: "iphone", revert: true },
     ],
   },
   {
@@ -58,11 +58,12 @@ export const PortfolioProjects = [
     desc: "10,000 dice NFT collection created on solana blockchain, randomly generated from 726841 possibilities.",
     tags: ["cinema 4D", "octane render"],
     images: [
-      { id: 7, src: NFTDice.nft3, scale: 1, class: "left-1/2", range: [-100, 100], mask: "dice", revert: true },
-      { id: 5, src: NFTDice.nft1, scale: 1, class: "top-24", range: [-100, 100], mask: "dice", revert: false },
-      { id: 8, src: NFTDice.nft4, scale: 1, class: "left-12", range: [-100, 100], mask: "iphone", revert: true },
-      { id: 6, src: NFTDice.nft2, scale: 1, class: "left-24", range: [-100, 100], mask: "dice", revert: false },
-      { id: 9, src: NFTDice.nft5, scale: 1, class: "left-2", range: [-100, 100], mask: "iphone", revert: true },
+      { id: 5, src: NFTDice.nft2, scale: 1.15, class: "left-0", range: [-100, 50], mask: "dice", revert: false },
+      { id: 6, src: NFTDice.nft1, scale: 0.9, class: "left-1/3", range: [-250, 100], mask: "dice", revert: false },
+      { id: 8, src: NFTDice.nft4, scale: 1, class: "right-1/2", range: [-300, 300], mask: "iphone", revert: true },
+      { id: 9, src: NFTDice.nft5, scale: 1.1, class: "right-6", range: [-300, 50], mask: "iphone", revert: true },
+      { id: 7, src: NFTDice.nft3, scale: 1.1, class: "right-1/4", range: [-100, 100], mask: "dice", revert: true },
+
     ],
   },
 ];
