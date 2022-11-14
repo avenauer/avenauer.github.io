@@ -25,7 +25,7 @@ export default function ToggleTheme() {
       title={`Turn on ${Dark() ? "light" : "dark"} mode`}
     >
       <div className="group-dark:hover:bg-blue-500 relative h-6 w-10 rounded-full bg-zinc-900 dark:bg-white">
-        <motion.span animate={{ y: Dark() ? 37 : -3 }} className="absolute left-0 right-0 bottom-5 mx-auto text-center text-xs font-medium">
+        <motion.span animate={{ y: Dark() ? 38 : -4 }} className="absolute left-0 right-0 bottom-5 mx-auto text-center text-xs font-medium">
           {Dark() ? "DARK" : "LIGHT"}
         </motion.span>
         <motion.svg animate={{ x: Dark() ? 0 : 15 }} width="24" height="24">
