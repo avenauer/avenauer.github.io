@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
+import Layout from "../src/containers/layout";
 
 export const currentYear = new Date().getFullYear();
 
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Marcin Bieszka — portfolio {currentYear}</title>
       </Head>
       <ThemeProvider enableSystem={true} defaultTheme="light" attribute="class">
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   );
