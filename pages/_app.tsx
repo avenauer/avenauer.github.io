@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 `}
       </Script>
       <Head>
-        <title>Marcin Bieszka — portfolio {currentYear}</title>
+        <title>Marcin Bieszka — portfolio 2022</title>
       </Head>
       <ThemeProvider enableSystem={true} defaultTheme="light" attribute="class">
         <Layout>

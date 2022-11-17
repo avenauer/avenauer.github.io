@@ -1565,6 +1565,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-image-zoom@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/next-image-zoom/-/next-image-zoom-1.1.7.tgz#5a4e9f0f32b3b2e49b7c153f30a0ddf301607b10"
+  integrity sha512-dSXA/c7z6SZQQvwoCP+JK9s0A5Nx1ZtGwIM7p/j7dP2gsLhdkwrTlShkQw+SvXDKgU5iVB2XoUKS+DFBGm49og==
+
 next-themes@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/next-themes/-/next-themes-0.2.0.tgz"

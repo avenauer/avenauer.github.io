@@ -50,6 +50,7 @@ const Intro = () => {
           <div className="mt-4 flex justify-center">
             <CustomA ariaLabel="Show recent projects" to="#recent_works" text="View recent projects" />
             <Paragraph size="sm" text="or" className="mx-2 sm:mx-4 md:mx-6" />
+            {/*<CustomLink to={"/collection"} text="View my collection" />*/}
             <CustomLink ariaLabel="Send email" to={`mailto:${email}`} text="Feel free to say hello" />
           </div>
         </motion.article>
