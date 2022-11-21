@@ -7,8 +7,8 @@ import Nft4 from "../../src/assets/images/nft/die_2.jpg";
 import Nft5 from "../../src/assets/images/nft/die_3.jpg";
 import WideContainer from "../../src/components/common/wrappers/wideContainer";
 import Picture from "../../src/components/common/wrappers/picture";
-import Image from "next/dist/client/future/image";
 import PublicImage from "../../public/logo_sm.jpg";
+import Image from "next/dist/client/legacy/image";
 
 export const PortfolioImages = [
   {

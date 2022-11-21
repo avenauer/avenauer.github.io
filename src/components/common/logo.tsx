@@ -5,10 +5,8 @@ import { animTransition, onLoadAnimation } from "../../../styles/easings";
 
 const Logo = () => {
   return (
-    <Link passHref href="/">
-      <motion.a
-        aria-label="Open main page"
-        rel="noopener noreferrer"
+    <Link href="/" aria-label="Open main page" rel="noopener noreferrer">
+      <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={onLoadAnimation}
         transition={animTransition}
@@ -23,7 +21,7 @@ const Logo = () => {
           <path className="duration-200" d="M2.13,85.06A2.12,2.12,0,0,1,0,82.94V2.13a2.13,2.13,0,1,1,4.25,0V82.94A2.12,2.12,0,0,1,2.13,85.06Z" />
           <path className="duration-200" d="M78.78,85.06a2.12,2.12,0,0,1-2.13-2.12V2.13a2.13,2.13,0,1,1,4.25,0V82.94A2.12,2.12,0,0,1,78.78,85.06Z" />
         </svg>
-      </motion.a>
+      </motion.div>
     </Link>
   );
 };
