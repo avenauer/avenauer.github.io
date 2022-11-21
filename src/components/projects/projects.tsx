@@ -1,12 +1,12 @@
 import React from "react";
 import ProjectItem from "../../containers/sections/projectItem";
-import { motion } from "framer-motion";
-import { Bp, Kranplatt, NFTDice, VR } from "../common/images";
+import {motion} from "framer-motion";
+import {Bp, Kranplatt, NFTDice, VR} from "../common/images";
 import Paragraph from "../common/text/Paragraph";
 import Headline from "../common/text/Headline";
 import WideContainer from "../common/wrappers/wideContainer";
 import CustomLink from "../common/link/CustomLink";
-import { email } from "../../../pages";
+import {email} from "../../../pages";
 
 export const PortfolioProjects = [
   {

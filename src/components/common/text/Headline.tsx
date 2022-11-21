@@ -1,4 +1,4 @@
-import { FC } from "react";
+import {FC} from "react";
 import fontStyle from "../../../../styles/typography.module.scss";
 
 interface HeadlineSize {

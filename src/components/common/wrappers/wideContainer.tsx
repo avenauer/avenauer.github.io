@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, {ReactNode} from "react";
 
 const WideContainer = ({ id, children, className }: { id?: string; children: ReactNode; className?: string }) => {
   return (

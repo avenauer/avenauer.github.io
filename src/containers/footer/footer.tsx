@@ -3,8 +3,8 @@ import WideContainer from "../../components/common/wrappers/wideContainer";
 import Logo from "../../components/common/logo";
 import Paragraph from "../../components/common/text/Paragraph";
 import CustomLink from "../../components/common/link/CustomLink";
-import { currentYear } from "../../../pages/_app";
-import { email } from "../../../pages";
+import {currentYear} from "../../../pages/_app";
+import {email} from "../../../pages";
 
 const linkedin = "https://www.linkedin.com/in/marcin-bieszka/";
 const github = "https://github.com/avenauer";

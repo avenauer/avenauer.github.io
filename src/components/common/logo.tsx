@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { animTransition, onLoadAnimation } from "../../../styles/easings";
+import {motion} from "framer-motion";
+import {animTransition, onLoadAnimation} from "../../../styles/easings";
 
 const Logo = () => {
   return (

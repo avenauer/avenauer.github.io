@@ -4,13 +4,13 @@ import Headline from "../../components/common/text/Headline";
 import Paragraph from "../../components/common/text/Paragraph";
 import CustomLink from "../../components/common/link/CustomLink";
 import fontStyle from "../../../styles/typography.module.scss";
-import { motion } from "framer-motion";
-import { animTransition } from "../../../styles/easings";
-import Picture from "../../components/common/wrappers/picture";
+import {motion} from "framer-motion";
+import {animTransition} from "../../../styles/easings";
 import LightFace from "../../assets/images/myphoto.jpg";
 import CustomA from "../../components/common/link/CustomA";
 import MouseScroll from "../../components/mouseScroll";
-import { email } from "../../../pages";
+import {email} from "../../../pages";
+import Image from "next/dist/client/legacy/image";
 
 const faceClass = "pointer-events-none block select-none";
 
@@ -26,12 +26,7 @@ const Intro = () => {
           initial={{ opacity: 0, scale: 0.1, y: 128 }}
           transition={animTransition}
         >
-          <Picture className={faceClass} src={LightFace.src} alt={"My face image"} />
-          {/*{theme === "dark" ? (
-            <Picture className={faceClass} src={DarkFace.src} alt={"My face image"} />
-          ) : (
-            <Picture className={faceClass} src={LightFace.src} alt={"My face image"} />
-          )}*/}
+          <Image src={LightFace.src} layout="responsive" width={220} height={220} alt="My face image" />
         </motion.div>
         <motion.article
           animate={{ opacity: 1, scale: 1, y: 0 }}

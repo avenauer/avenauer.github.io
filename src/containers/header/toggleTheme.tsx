@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
-import { motion } from "framer-motion";
-import { animTransition, onLoadAnimation } from "../../../styles/easings";
+import React, {useEffect, useState} from "react";
+import {useTheme} from "next-themes";
+import {motion} from "framer-motion";
+import {animTransition, onLoadAnimation} from "../../../styles/easings";
 
 export default function ToggleTheme() {
   const [mounted, setMounted] = useState(false);

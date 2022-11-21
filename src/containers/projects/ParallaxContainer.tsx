@@ -1,6 +1,6 @@
-import { Fragment } from "react";
-import { motion } from "framer-motion";
-import { PortfolioProjects } from "../../components/projects/projects";
+import {Fragment} from "react";
+import {motion} from "framer-motion";
+import {PortfolioProjects} from "../../components/projects/projects";
 import ImageWrapper from "../../components/common/wrappers/imageWrapper";
 
 const ParallaxContainer = ({ projectId }: { projectId: number }) => {

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { animTransition, onLoadAnimation } from "../../styles/easings";
+import {motion} from "framer-motion";
+import {animTransition, onLoadAnimation} from "../../styles/easings";
 
 const MouseScroll = () => {
   return (

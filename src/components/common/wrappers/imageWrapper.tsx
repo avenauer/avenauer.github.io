@@ -1,7 +1,6 @@
-import React, { FC, useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import Picture from "./picture";
-import { animTransition } from "../../../../styles/easings";
+import React, {FC, useRef} from "react";
+import {motion, useScroll, useSpring, useTransform} from "framer-motion";
+import {animTransition} from "../../../../styles/easings";
 import Image from "next/dist/client/legacy/image";
 
 interface ImageConfig {

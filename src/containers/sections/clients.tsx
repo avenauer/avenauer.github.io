@@ -44,8 +44,8 @@ const Clients = () => {
         <div className="py-8">
           {Companies.map((value, index) => {
             return (
-              <div className="inline-block relative h-14 my-3 w-1/3 md:h-14 md:w-1/5" key={index}>
-                <Image layout="fill" className="absolute w-full h-full" src={value.img} alt={value.name} />
+              <div className="relative my-3 inline-block h-14 w-1/3 md:h-14 md:w-1/5" key={index}>
+                <Image layout="fill" className="absolute h-full w-full" src={value.img} alt={value.name} />
               </div>
             );
           })}
