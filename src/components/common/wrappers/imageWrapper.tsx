@@ -2,6 +2,7 @@ import React, { FC, useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Picture from "./picture";
 import { animTransition } from "../../../../styles/easings";
+import Image from "next/dist/client/legacy/image";
 
 interface ImageConfig {
   transition?: boolean;
@@ -49,7 +50,15 @@ const ImageWrapper: FC<ImageConfig> = ({ transition, src, scale, range, classNam
         } absolute inline-block`}
       >
         <motion.div ref={ref} className="absolute left-1/2 top-1/2 -z-50 h-1" />
-        <Picture src={src} alt={`${name} project image`} />
+        <Image
+          src={`${src}`}
+          width={30}
+          height={`${mask === "iphone" ? 60 : mask === "ipad" ? 23 : mask === "dice" ? 30 : 30}`}
+          layout="responsive"
+          className="h-full w-full"
+          title={`${name} project image`}
+          alt={`${name} project image`}
+        />
         {/*For easier control of moving elements in project.tsx*/}
         {/*<div className="absolute top-0 left-0 z-50 h-full w-full bg-blue-900 bg-opacity-50">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl font-bold">{projectId}</div>

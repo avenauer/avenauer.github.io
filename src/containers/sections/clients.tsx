@@ -1,5 +1,4 @@
 import React from "react";
-import Picture from "../../components/common/wrappers/picture";
 import KranplattLogo from "../../assets/svg/companies/kranplatt.svg";
 import BoombitLogo from "../../assets/svg/companies/boombit.svg";
 import IliftLogo from "../../assets/svg/companies/ilift.svg";
@@ -7,6 +6,7 @@ import QuantLogo from "../../assets/svg/companies/quant.svg";
 import CayenneLogo from "../../assets/svg/companies/cayenne.svg";
 import BaseContainer from "../../components/common/wrappers/baseContainer";
 import Headline from "../../components/common/text/Headline";
+import Image from "next/dist/client/legacy/image";
 
 const Companies = [
   {
@@ -44,8 +44,8 @@ const Clients = () => {
         <div className="py-8">
           {Companies.map((value, index) => {
             return (
-              <div className="inline-block h-14 w-1/3 p-2 md:h-20 md:w-1/5 md:p-4" key={index}>
-                <Picture src={value.img} alt={value.name} />
+              <div className="inline-block relative h-14 my-3 w-1/3 md:h-14 md:w-1/5" key={index}>
+                <Image layout="fill" className="absolute w-full h-full" src={value.img} alt={value.name} />
               </div>
             );
           })}
