@@ -39,3 +39,17 @@ a {
 .dice_wrap {
   @apply w-3/12;
 }
+
+.image-container {
+  flex: 1 0 calc(25% - 10px);
+  background: #4f94ff;
+  border: 1px solid red;
+}
+.image-container:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.image-wrapper {
+}
